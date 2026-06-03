@@ -11,9 +11,9 @@ import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
-@Mod(value = FahimsRPGMod.MOD_ID, dist = Dist.CLIENT)
+@Mod(value = net.fahim.fahimsrpgmod.FahimsRPGMod.MOD_ID, dist = Dist.CLIENT)
 // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-@EventBusSubscriber(modid = FahimsRPGMod.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = net.fahim.fahimsrpgmod.FahimsRPGMod.MOD_ID, value = Dist.CLIENT)
 public class FahimsRPGModClient {
     public FahimsRPGModClient(ModContainer container) {
         // Allows NeoForge to create a config screen for this mod's configs.
@@ -25,7 +25,7 @@ public class FahimsRPGModClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         // Some client setup code
-        FahimsRPGMod.LOGGER.info("HELLO FROM CLIENT SETUP");
-        FahimsRPGMod.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        net.fahim.fahimsrpgmod.FahimsRPGMod.LOGGER.info("HELLO FROM CLIENT SETUP");
+        net.fahim.fahimsrpgmod.FahimsRPGMod.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
     }
 }

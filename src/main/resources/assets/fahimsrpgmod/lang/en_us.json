@@ -1,13 +1,8 @@
 {
-  "itemGroup.fahimsrpgmod": "Example Mod Tab",
-  "block.fahimsrpgmod.example_block": "Example Block",
-  "item.fahimsrpgmod.example_item": "Example Item",
+  "item.fahimsrpgmod.azurite": "Azurite",
+  "item.fahimsrpgmod.raw_azurite": "Raw Azurite",
 
-  "fahimsrpgmod.configuration.title": "FahimsRPGMod Configs",
-  "fahimsrpgmod.configuration.section.fahimsrpgmod.common.toml": "FahimsRPGMod Configs",
-  "fahimsrpgmod.configuration.section.fahimsrpgmod.common.toml.title": "FahimsRPGMod Configs",
-  "fahimsrpgmod.configuration.items": "Item List",
-  "fahimsrpgmod.configuration.logDirtBlock": "Log Dirt Block",
-  "fahimsrpgmod.configuration.magicNumberIntroduction": "Magic Number Text",
-  "fahimsrpgmod.configuration.magicNumber": "Magic Number"
+  "creativetab.fahimsrpgmod.azurite_items": "Azurite Items",
+  "creativetab.fahimsrpgmod.azurite_blocks": "Azurite Blocks"
+
 }
