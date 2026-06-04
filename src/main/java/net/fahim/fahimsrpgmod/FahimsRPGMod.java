@@ -2,6 +2,7 @@ package net.fahim.fahimsrpgmod;
 
 import com.mojang.logging.LogUtils;
 import net.fahim.fahimsrpgmod.Config;
+import net.fahim.fahimsrpgmod.block.ModBlocks;
 import net.fahim.fahimsrpgmod.creativemodetab.ModCreativeModeTabs;
 import net.fahim.fahimsrpgmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -34,6 +35,7 @@ public class FahimsRPGMod {
 
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
 
@@ -54,10 +56,12 @@ public class FahimsRPGMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.AZURITE);
             event.accept(ModItems.RAW_AZURITE);
+
         }
 
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-
+        if(event.getTabKey()==CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.AZURITE_BLOCK);
+            event.accept(ModBlocks.PINK_GARNET_BLOCK);
         }
     }
 
