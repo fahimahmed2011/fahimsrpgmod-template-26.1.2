@@ -51,6 +51,7 @@ neoForge {
             client()
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
+
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
 
@@ -80,6 +81,8 @@ neoForge {
 
         // applies to all the run configs above
         configureEach {
+            jvmArguments.add("--enable-native-access=ALL-UNNAMED")
+            logLevel = org.slf4j.event.Level.DEBUG
             // Recommended logging data for a userdev environment
             // The markers can be added/remove as needed separated by commas.
             // "SCAN": For mods scan.

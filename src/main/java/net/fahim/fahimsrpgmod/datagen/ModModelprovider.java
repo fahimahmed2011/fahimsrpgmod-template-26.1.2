@@ -18,13 +18,18 @@ public class ModModelprovider extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         itemModels.generateFlatItem(ModItems.AZURITE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.RAW_AZURITE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.RAW_PINK_GARNET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.PINK_GARNET.get(), ModelTemplates.FLAT_ITEM);
 
 
 
         /* BLOCKS*/
-        blockModels.createTrivialCube(ModBlocks.AZURITE_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.PINK_GARNET_BLOCK.get());
+
+        blockModels.createTrivialCube(ModBlocks.AZURITE_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.RAW_PINK_GARNET_BLOCK.get());
+        blockModels.createTrivialCube(ModBlocks.AZURITE_DEEPSLATE_ORE.get());
+        blockModels.createTrivialCube(ModBlocks.AZURITE_ORE.get());
 
     }
 }

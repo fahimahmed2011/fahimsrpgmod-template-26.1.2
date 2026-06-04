@@ -1,0 +1,28 @@
+package net.fahim.fahimsrpgmod.datagen;
+
+import net.fahim.fahimsrpgmod.FahimsRPGMod;
+import net.fahim.fahimsrpgmod.block.ModBlocks;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.data.BlockTagsProvider;
+
+import java.util.concurrent.CompletableFuture;
+
+public class ModBlockTagsProvider extends BlockTagsProvider {
+    public ModBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+        super(output, lookupProvider, FahimsRPGMod.MOD_ID);
+    }
+
+    @Override
+    protected void addTags(HolderLookup.Provider provider) {
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.AZURITE_BLOCK.get())
+                .add(ModBlocks.RAW_PINK_GARNET_BLOCK.get())
+                .add(ModBlocks.AZURITE_BLOCK.get())
+                .add(ModBlocks.AZURITE_BLOCK.get())
+                .add(ModBlocks.AZURITE_BLOCK.get());
+
+    }
+}

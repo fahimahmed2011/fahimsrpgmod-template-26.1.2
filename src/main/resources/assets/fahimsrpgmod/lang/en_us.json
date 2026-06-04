@@ -1,13 +1,20 @@
 {
   "item.fahimsrpgmod.azurite": "Azurite",
   "item.fahimsrpgmod.raw_azurite": "Raw Azurite",
+  "item.fahimsrpgmod.raw_pink_garnet": "Raw Pink Garnet",
+  "item.fahimsrpgmod.pink_garnet": "Pink Garnet",
 
   "block.fahimsrpgmod.azurite_block": "Block of Azurite",
   "block.fahimsrpgmod.raw_pink_garnet": "Raw Pink Garnet",
   "block.fahimsrpgmod.pink_garnet_block": "Pink Garnet Block",
+  "block.fahimsrpgmod.azurite_ore": "Azurite Ore",
+  "block.fahimsrpgmod.azurite_deepslate_ore": "Azurite Deepslate Ore",
+  "block.fahimsrpgmod.raw_azurite_ore": "Raw Azurite Ore",
 
 
   "creativetab.fahimsrpgmod.azurite_items": "Azurite Items",
-  "creativetab.fahimsrpgmod.azurite_blocks": "Azurite Blocks"
+  "creativetab.fahimsrpgmod.azurite_blocks": "Azurite Blocks",
+  "creativetab.fahimsrpgmod.pink_garnet_blocks": "Pink GarnetItems",
+  "creativetab.fahimsrpgmod.pink_garnet_items": "Pink Garnet Items"
 
 }

@@ -2,8 +2,10 @@ package net.fahim.fahimsrpgmod.block;
 
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
 import net.fahim.fahimsrpgmod.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -20,6 +22,18 @@ public static final DeferredBlock<Block> AZURITE_BLOCK =  registerblock("azurite
         properties -> new Block(properties.strength(4f)
                 .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
+public static final DeferredBlock<Block> RAW_AZURITE_BLOCK =  registerblock("raw_azurite_block",
+        properties -> new Block(properties.strength(4f)
+                .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+public static final DeferredBlock<Block> AZURITE_ORE =  registerblock("raw_azurite_ore",
+        properties -> new DropExperienceBlock(UniformInt.of(2,4),properties.strength(4f)
+                .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+public static final DeferredBlock<Block> AZURITE_DEEPSLATE_ORE =  registerblock("azurite_deepslate_ore",
+        properties -> new DropExperienceBlock(UniformInt.of(5,6),properties.strength(7f)
+                .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
     public static final DeferredBlock<Block> PINK_GARNET_BLOCK =  registerblock("pink_garnet_block",
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
@@ -32,6 +46,7 @@ public static final DeferredBlock<Block> AZURITE_BLOCK =  registerblock("azurite
 
 private static <T extends Block> DeferredBlock<T> registerblock(String name, Function<BlockBehaviour.Properties, T> function){
     DeferredBlock<T> toReturn = BLOCKS.registerBlock(name,function);
+    registerBlockItem(name, toReturn);
     return toReturn;
 }
 

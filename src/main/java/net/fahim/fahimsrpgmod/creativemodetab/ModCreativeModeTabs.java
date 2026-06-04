@@ -20,9 +20,22 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab>PINK_GARNET_BLOCK = CREATIVE_MODE_TABS.register("pink_garnet_blocks_tab",
             ()->CreativeModeTab.builder().icon(()->new ItemStack(ModBlocks.PINK_GARNET_BLOCK.get()))
+                    .title(Component.translatable("creativetab.fahimsrpgmod.pink_garnet_blocks"))
                     .withTabsAfter(Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID,"azurite_blocks_tab")).displayItems((itemDisplayParameters, output) -> {
                       output.accept(ModBlocks.PINK_GARNET_BLOCK);
-                      output.accept(ModBlocks.RAW_PINK_GARNET_BLOCK);
+
+
+                    }).build());
+
+
+    public static final Supplier<CreativeModeTab>PINK_GARNET_ITEMS = CREATIVE_MODE_TABS.register("pink_garnet_items_tab",
+            ()->CreativeModeTab.builder().icon(()->new ItemStack(ModItems.PINK_GARNET.get()))
+                    .title(Component.translatable("creativetab.fahimsrpgmod.pink_garnet_items"))
+                    .withTabsAfter(Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID,"pink_garnet_blocks_tab")).displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.PINK_GARNET);
+                        output.accept(ModItems.RAW_PINK_GARNET);
+
+
 
                     }).build());
 
@@ -44,6 +57,10 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.fahimsrpgmod.azurite_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.AZURITE_BLOCK);
+                        output.accept(ModBlocks.RAW_AZURITE_BLOCK);
+
+                        output.accept(ModBlocks.AZURITE_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.AZURITE_ORE);
 
 
 
