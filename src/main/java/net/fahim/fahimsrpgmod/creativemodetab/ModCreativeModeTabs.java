@@ -23,6 +23,8 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.fahimsrpgmod.pink_garnet_items"))
                     .withTabsAfter(Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID,"azurite_blocks_tab")).displayItems((itemDisplayParameters, output) -> {
                       output.accept(ModBlocks.PINK_GARNET_BLOCK);
+                      output.accept(ModBlocks.PINK_GARNET_ORE);
+                      output.accept(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
 
 
                     }).build());

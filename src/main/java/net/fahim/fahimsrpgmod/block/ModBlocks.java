@@ -50,6 +50,16 @@ public static final DeferredBlock<Block> AZURITE_DEEPSLATE_ORE =  registerblock(
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
+    public static final DeferredBlock<Block> PINK_GARNET_ORE =  registerblock("pink_garnet_ore",
+            properties -> new Block(properties.strength(6f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> PINK_GARNET_DEEPSLATE_ORE =  registerblock("pink_garnet_deepslate_ore",
+            properties -> new Block(properties.strength(6f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+
+
 
 
 private static <T extends Block> DeferredBlock<T> registerblock(String name, Function<BlockBehaviour.Properties, T> function){
