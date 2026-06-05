@@ -26,7 +26,15 @@ public static final DeferredBlock<Block> RAW_AZURITE_BLOCK =  registerblock("raw
         properties -> new Block(properties.strength(4f)
                 .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
-public static final DeferredBlock<Block> AZURITE_ORE =  registerblock("raw_azurite_ore",
+public static final DeferredBlock<Block> AZURITE_ORE =  registerblock("azurite_ore",
+        properties -> new DropExperienceBlock(UniformInt.of(2,4),properties.strength(4f)
+                .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+public static final DeferredBlock<Block> AZURITE_END_ORE =  registerblock("azurite_end_ore",
+        properties -> new DropExperienceBlock(UniformInt.of(2,4),properties.strength(4f)
+                .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+public static final DeferredBlock<Block> AZURITE_NETHER_ORE =  registerblock("azurite_nether_ore",
         properties -> new DropExperienceBlock(UniformInt.of(2,4),properties.strength(4f)
                 .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
