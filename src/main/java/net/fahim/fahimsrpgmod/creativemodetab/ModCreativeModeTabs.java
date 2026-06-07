@@ -36,6 +36,7 @@ public class ModCreativeModeTabs {
                     .withTabsAfter(Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID,"pink_garnet_blocks_tab")).displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.PINK_GARNET);
                         output.accept(ModItems.RAW_PINK_GARNET);
+                        output.accept(ModItems.CHISEL_ITEM);
 
 
 
@@ -48,7 +49,7 @@ public class ModCreativeModeTabs {
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModItems.AZURITE);
                 output.accept(ModItems.RAW_AZURITE);
-                output.accept(ModItems.MEATAL_DETECTOR);
+                output.accept(ModItems.METAL_DETECTOR);
 
 
 

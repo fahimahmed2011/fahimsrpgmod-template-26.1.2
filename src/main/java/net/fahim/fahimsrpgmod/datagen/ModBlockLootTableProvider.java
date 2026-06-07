@@ -45,6 +45,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.PINK_GARNET_ORE.get(),
                 createMultipleOreDrops(ModBlocks.PINK_GARNET_ORE.get(),ModItems.RAW_PINK_GARNET.get(),4,5));
 
+        add(ModBlocks.PINK_GARNET_NETHER_ORE.get(),
+                createMultipleOreDrops(ModBlocks.PINK_GARNET_ORE.get(),ModItems.RAW_PINK_GARNET.get(),4,5));
+
+        add(ModBlocks.PINK_GARNET_END_ORE.get(),
+                createMultipleOreDrops(ModBlocks.PINK_GARNET_ORE.get(),ModItems.RAW_PINK_GARNET.get(),4,5));
+
         add(ModBlocks.AZURITE_DEEPSLATE_ORE.get(),
                 createMultipleOreDrops(ModBlocks.AZURITE_DEEPSLATE_ORE.get(),ModItems.RAW_AZURITE.get(),4,5));
 

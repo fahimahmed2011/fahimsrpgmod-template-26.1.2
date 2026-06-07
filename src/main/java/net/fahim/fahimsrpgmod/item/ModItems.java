@@ -15,7 +15,10 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_PINK_GARNET = ITEMS.registerSimpleItem("raw_pink_garnet");
     public static final DeferredItem<Item> PINK_GARNET = ITEMS.registerSimpleItem("pink_garnet");
 
-   public static final DeferredItem<Item> MEATAL_DETECTOR = ITEMS.registerItem("meatal_detector",
+   public static final DeferredItem<Item> METAL_DETECTOR = ITEMS.registerItem("meatal_detector",
+           properties -> new MetalDectectorItem(properties.durability(100)));
+
+   public static final DeferredItem<Item> CHISEL_ITEM = ITEMS.registerItem("chisel_item",
            properties -> new MetalDectectorItem(properties.durability(100)));
 
     public static void register (IEventBus eventBus) {

@@ -35,7 +35,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.AZURITE_NETHER_ORE.get())
                 .add(ModBlocks.AZURITE_END_ORE.get())
                 .add(ModBlocks.PINK_GARNET_ORE.get())
-                .add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE.get());
+                .add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE.get())
+                .add(ModBlocks.PINK_GARNET_END_ORE.get())
+                .add(ModBlocks.PINK_GARNET_NETHER_ORE.get());
 
     }
 }

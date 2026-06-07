@@ -38,6 +38,14 @@ public static final DeferredBlock<Block> AZURITE_NETHER_ORE =  registerblock("az
         properties -> new DropExperienceBlock(UniformInt.of(2,4),properties.strength(4f)
                 .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+public static final DeferredBlock<Block> PINK_GARNET_NETHER_ORE =  registerblock("pink_garnet_nether_ore",
+        properties -> new DropExperienceBlock(UniformInt.of(2,4),properties.strength(4f)
+                .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+public static final DeferredBlock<Block> PINK_GARNET_END_ORE =  registerblock("pink_garnet_end_ore",
+        properties -> new DropExperienceBlock(UniformInt.of(2,4),properties.strength(4f)
+                .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
 public static final DeferredBlock<Block> AZURITE_DEEPSLATE_ORE =  registerblock("azurite_deepslate_ore",
         properties -> new DropExperienceBlock(UniformInt.of(5,6),properties.strength(7f)
                 .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
