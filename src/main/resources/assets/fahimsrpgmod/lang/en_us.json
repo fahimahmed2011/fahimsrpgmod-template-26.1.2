@@ -3,6 +3,8 @@
   "item.fahimsrpgmod.raw_azurite": "Raw Azurite",
   "item.fahimsrpgmod.raw_pink_garnet": "Raw Pink Garnet",
   "item.fahimsrpgmod.pink_garnet": "Pink Garnet",
+  "item.fahimsrpgmod.metal_detector.no_valuables": "No Valueables Found!!",
+  "item.fahimsrpgmod.metal_detector": "Metal Detector",
 
   "block.fahimsrpgmod.azurite_block": "Block of Azurite",
   "block.fahimsrpgmod.raw_pink_garnet": "Raw Pink Garnet",
@@ -20,5 +22,6 @@
   "creativetab.fahimsrpgmod.azurite_blocks": "Azurite Blocks",
   "creativetab.fahimsrpgmod.pink_garnet_blocks": "Pink Garnet Blocks",
   "creativetab.fahimsrpgmod.pink_garnet_items": "Pink Garnet Items"
+
 
 }

@@ -20,6 +20,7 @@ public class ModModelprovider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.RAW_AZURITE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.RAW_PINK_GARNET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.PINK_GARNET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.MEATAL_DETECTOR.get(), ModelTemplates.FLAT_ITEM);
 
 
 

@@ -1,9 +1,9 @@
 package net.fahim.fahimsrpgmod.item;
 
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
+import net.fahim.fahimsrpgmod.item.custom.MetalDectectorItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -15,7 +15,8 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_PINK_GARNET = ITEMS.registerSimpleItem("raw_pink_garnet");
     public static final DeferredItem<Item> PINK_GARNET = ITEMS.registerSimpleItem("pink_garnet");
 
-
+   public static final DeferredItem<Item> MEATAL_DETECTOR = ITEMS.registerItem("meatal_detector",
+           properties -> new MetalDectectorItem(properties.durability(100)));
 
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);
