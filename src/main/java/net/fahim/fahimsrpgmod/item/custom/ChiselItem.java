@@ -17,6 +17,7 @@ import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import com.mojang.blaze3d.platform.InputConstants;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -89,6 +90,7 @@ public class ChiselItem extends Item {
 
                     // Ores -> Blocks
                     Map.entry(Blocks.DIAMOND_ORE, Blocks.DIAMOND_BLOCK),
+                    Map.entry(Blocks.DEEPSLATE_REDSTONE_ORE, Blocks.REDSTONE_BLOCK),
                     Map.entry(Blocks.DEEPSLATE_DIAMOND_ORE, Blocks.DIAMOND_BLOCK),
                     Map.entry(Blocks.GOLD_ORE, Blocks.GOLD_BLOCK),
                     Map.entry(Blocks.DEEPSLATE_GOLD_ORE, Blocks.GOLD_BLOCK),
@@ -99,7 +101,6 @@ public class ChiselItem extends Item {
                     Map.entry(Blocks.LAPIS_ORE, Blocks.LAPIS_BLOCK),
                     Map.entry(Blocks.DEEPSLATE_LAPIS_ORE, Blocks.LAPIS_BLOCK),
                     Map.entry(Blocks.REDSTONE_ORE, Blocks.REDSTONE_BLOCK),
-                    Map.entry(Blocks.DEEPSLATE_REDSTONE_ORE, Blocks.REDSTONE_BLOCK),
                     Map.entry(Blocks.COAL_ORE, Blocks.COAL_BLOCK),
                     Map.entry(Blocks.DEEPSLATE_COAL_ORE, Blocks.COAL_BLOCK),
                     Map.entry(Blocks.COPPER_ORE, Blocks.COPPER_BLOCK),
@@ -137,10 +138,19 @@ public class ChiselItem extends Item {
 
         return InteractionResult.SUCCESS;
     }
-
+    @SuppressWarnings("deprecation")
     @Override
-    public void appendHoverText(ItemStack stack, Item.TooltipContext context, TooltipDisplay display, Consumer<Component> tooltip, TooltipFlag flag) {
-        tooltip.accept(Component.translatable("tooltip.fahimsrpgmod.chisel"));
-        super.appendHoverText(stack, context, display, tooltip, flag);
-    }
-}
+    public void appendHoverText(ItemStack stack,
+                                Item.TooltipContext context,
+                                net.minecraft.world.item.component.TooltipDisplay tooltipDisplay,
+                                java.util.function.Consumer<Component> tooltipComponents,
+                                TooltipFlag tooltipFlag) {
+
+        if (tooltipFlag.hasShiftDown()) {
+            tooltipComponents.accept(Component.literal("§bTransforms stones, logs, and ores into advanced variations."));
+        } else {
+            tooltipComponents.accept(Component.literal("§7Hold §eSHIFT§7 for details"));
+        }
+
+        super.appendHoverText(stack, context, tooltipDisplay, tooltipComponents, tooltipFlag);
+    }}

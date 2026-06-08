@@ -25,6 +25,8 @@ public class ModCreativeModeTabs {
                       output.accept(ModBlocks.PINK_GARNET_BLOCK);
                       output.accept(ModBlocks.PINK_GARNET_ORE);
                       output.accept(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+                      output.accept(ModBlocks.MAGIC_BLOCK);
+
 
 
                     }).build());
@@ -40,6 +42,7 @@ public class ModCreativeModeTabs {
 
 
 
+
                     }).build());
 
     public static final Supplier<CreativeModeTab> AZURITE_ITEMS_TAB = CREATIVE_MODE_TABS.register("azurite_items_tab",
@@ -50,6 +53,7 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.AZURITE);
                 output.accept(ModItems.RAW_AZURITE);
                 output.accept(ModItems.METAL_DETECTOR);
+                output.accept(ModItems.ONION);
 
 
 

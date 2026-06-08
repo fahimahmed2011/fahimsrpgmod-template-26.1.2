@@ -22,6 +22,7 @@ public class ModModelprovider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.PINK_GARNET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.METAL_DETECTOR.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CHISEL_ITEM.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.ONION.get(), ModelTemplates.FLAT_ITEM);
 
 
 
@@ -38,6 +39,7 @@ public class ModModelprovider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.AZURITE_END_ORE.get());
         blockModels.createTrivialCube(ModBlocks.PINK_GARNET_NETHER_ORE.get());
         blockModels.createTrivialCube(ModBlocks.PINK_GARNET_END_ORE.get());
+        blockModels.createTrivialCube(ModBlocks.MAGIC_BLOCK.get());
 
     }
 }

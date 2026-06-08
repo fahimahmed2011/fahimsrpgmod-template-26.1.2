@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "fahimsrpgmod:item/meatal_detector"
+    "layer0": "fahimsrpgmod:item/metal_detector"
   }
 }

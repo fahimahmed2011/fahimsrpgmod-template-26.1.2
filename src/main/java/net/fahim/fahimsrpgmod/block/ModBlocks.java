@@ -1,6 +1,7 @@
 package net.fahim.fahimsrpgmod.block;
 
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
+import net.fahim.fahimsrpgmod.block.custom.MagicBlock;
 import net.fahim.fahimsrpgmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -65,6 +66,10 @@ public static final DeferredBlock<Block> AZURITE_DEEPSLATE_ORE =  registerblock(
     public static final DeferredBlock<Block> PINK_GARNET_DEEPSLATE_ORE =  registerblock("pink_garnet_deepslate_ore",
             properties -> new Block(properties.strength(6f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerblock("magic_block",
+            properties -> new MagicBlock(properties.strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DECORATED_POT)));
 
 
 
