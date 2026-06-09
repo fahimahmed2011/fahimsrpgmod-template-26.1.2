@@ -42,6 +42,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_PINK_GARNET);
                         output.accept(ModItems.CHISEL_ITEM);
                         output.accept(ModItems.STARLIGHT_ASHES);
+                        output.accept(ModItems.CRUDE_BOW);
 
 
 

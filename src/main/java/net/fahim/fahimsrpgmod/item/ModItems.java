@@ -5,6 +5,7 @@ import net.fahim.fahimsrpgmod.food.ModFoods;
 import net.fahim.fahimsrpgmod.item.custom.ChiselItem;
 import net.fahim.fahimsrpgmod.item.custom.MetalDectectorItem;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -28,6 +29,11 @@ public class ModItems {
 
    public static final DeferredItem<Item> CHISEL_ITEM = ITEMS.registerItem("chisel_item",
            properties -> new ChiselItem(properties.durability(100)));
+
+   public static final DeferredItem<Item> CRUDE_BOW = ITEMS.registerItem("crude_bow",
+           properties -> new BowItem(properties.durability(500)));
+
+
 
     public static final DeferredItem<Item> ONION = ITEMS.registerItem("onion",
             properties -> new Item(properties.food(ModFoods.ONION, ModFoods.ONION_CONSUMABLE)){
