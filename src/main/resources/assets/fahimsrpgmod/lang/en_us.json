@@ -7,6 +7,8 @@
   "item.fahimsrpgmod.metal_detector": "Metal Detector",
   "item.fahimsrpgmod.chisel_item": "Chisel",
   "item.fahimsrpgmod.onion": "Onion",
+  "item.fahimsrpgmod.end_fire": "End Fire",
+  "item.fahimsrpgmod.starlight_ashes": "End Fire",
 
   "block.fahimsrpgmod.azurite_block": "Block of Azurite",
   "block.fahimsrpgmod.raw_pink_garnet": "Raw Pink Garnet",
@@ -25,7 +27,12 @@
   "creativetab.fahimsrpgmod.pink_garnet_blocks": "Pink Garnet Blocks",
   "creativetab.fahimsrpgmod.pink_garnet_items": "Pink Garnet Items",
   "tooltip.fahimsrpgmod.chisel": "Hold SHIFT for more information",
-  "tooltip.fahimsrpgmod.chisel.shift_down": "Used to reshape blocks into decorative variants."
+  "tooltip.fahimsrpgmod.chisel.shift_down": "Used to reshape blocks into decorative variants.",
+  "creativetab.fahimsrpgmod.food": "Food",
+  "tooltip.fahimsrpgmod.onion.tooltip": "Taste like Onions  :(",
+  "tooltip.fahimsrpgmod.magic_block.tooltip": "its quite §9MAGICAL§r",
+  "tooltip.fahimsrpgmod.metal_detector.shift_down": "Click on Block and find out",
+  "tooltip.fahimsrpgmod.metal_detector": "Press §eShift§r  for more info"
 
 
 }

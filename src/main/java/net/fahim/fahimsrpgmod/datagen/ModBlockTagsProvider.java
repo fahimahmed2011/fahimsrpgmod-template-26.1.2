@@ -2,10 +2,12 @@ package net.fahim.fahimsrpgmod.datagen;
 
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
 import net.fahim.fahimsrpgmod.block.ModBlocks;
+import net.fahim.fahimsrpgmod.tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
@@ -39,6 +41,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE.get())
                 .add(ModBlocks.PINK_GARNET_END_ORE.get())
                 .add(ModBlocks.PINK_GARNET_NETHER_ORE.get());
+
+        tag(ModTags.Blocks.METAL_DETECTABLES)
+                .addTag(Tags.Blocks.ORES);
 
     }
 }

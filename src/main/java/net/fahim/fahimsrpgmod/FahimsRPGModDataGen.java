@@ -1,9 +1,6 @@
 package net.fahim.fahimsrpgmod;
 
-import net.fahim.fahimsrpgmod.datagen.ModBlockLootTableProvider;
-import net.fahim.fahimsrpgmod.datagen.ModBlockTagsProvider;
-import net.fahim.fahimsrpgmod.datagen.ModModelprovider;
-import net.fahim.fahimsrpgmod.datagen.ModRecipeProvider;
+import net.fahim.fahimsrpgmod.datagen.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -30,6 +27,8 @@ public class FahimsRPGModDataGen {
             List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
 
     generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
+    generator.addProvider(true,new ModDataMapProvider(packOutput,lookupProvider));
+    generator.addProvider(true,new ModItemTagsProvider(packOutput,lookupProvider));
 
 
     }

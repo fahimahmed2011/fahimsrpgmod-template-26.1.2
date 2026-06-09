@@ -1,0 +1,10 @@
+{
+  "values": {
+    "fahimsrpgmod:end_fire": {
+      "burn_time": 4800
+    },
+    "fahimsrpgmod:starlight_ashes": {
+      "burn_time": 6000
+    }
+  }
+}

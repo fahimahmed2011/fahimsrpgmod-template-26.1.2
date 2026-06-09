@@ -11,6 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.lang.reflect.Parameter;
 import java.util.function.Supplier;
 
 public class ModCreativeModeTabs {
@@ -35,10 +36,12 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab>PINK_GARNET_ITEMS = CREATIVE_MODE_TABS.register("pink_garnet_items_tab",
             ()->CreativeModeTab.builder().icon(()->new ItemStack(ModItems.PINK_GARNET.get()))
                     .title(Component.translatable("creativetab.fahimsrpgmod.pink_garnet_items"))
-                    .withTabsAfter(Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID,"pink_garnet_blocks_tab")).displayItems((itemDisplayParameters, output) -> {
+                    .withTabsAfter(Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID,"pink_garnet_blocks_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.PINK_GARNET);
                         output.accept(ModItems.RAW_PINK_GARNET);
                         output.accept(ModItems.CHISEL_ITEM);
+                        output.accept(ModItems.STARLIGHT_ASHES);
 
 
 
@@ -53,12 +56,22 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.AZURITE);
                 output.accept(ModItems.RAW_AZURITE);
                 output.accept(ModItems.METAL_DETECTOR);
-                output.accept(ModItems.ONION);
-
-
-
+                output.accept(ModItems.END_FIRE);
 
             }).build());
+
+    public static final  Supplier<CreativeModeTab> FOOD = CREATIVE_MODE_TABS.register("food",
+            ()->CreativeModeTab.builder().icon(()->new ItemStack(ModItems.ONION.get()))
+                    .title(Component.translatable("creativetab.fahimsrpgmod.food"))
+                    .withTabsAfter(Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID,"pink_garnet_items_tab"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(ModItems.ONION);
+
+                    }).build());
+
+
+
+
 
     public static final Supplier<CreativeModeTab> AZURITE_BLOCKS_ITEMS_TAB = CREATIVE_MODE_TABS.register("azurite_blocks_tab",
             ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModBlocks.AZURITE_BLOCK.get()))
