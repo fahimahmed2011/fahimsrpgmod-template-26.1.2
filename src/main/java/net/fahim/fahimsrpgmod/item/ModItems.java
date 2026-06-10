@@ -3,6 +3,7 @@ package net.fahim.fahimsrpgmod.item;
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
 import net.fahim.fahimsrpgmod.food.ModFoods;
 import net.fahim.fahimsrpgmod.item.custom.ChiselItem;
+import net.fahim.fahimsrpgmod.item.custom.CrudeBowItem;
 import net.fahim.fahimsrpgmod.item.custom.MetalDectectorItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BowItem;
@@ -30,8 +31,8 @@ public class ModItems {
    public static final DeferredItem<Item> CHISEL_ITEM = ITEMS.registerItem("chisel_item",
            properties -> new ChiselItem(properties.durability(100)));
 
-   public static final DeferredItem<Item> CRUDE_BOW = ITEMS.registerItem("crude_bow",
-           properties -> new BowItem(properties.durability(500)));
+    public static final DeferredItem<Item> CRUDE_BOW = ITEMS.registerItem("crude_bow",
+            properties -> new CrudeBowItem(properties.durability(500)));
 
 
 

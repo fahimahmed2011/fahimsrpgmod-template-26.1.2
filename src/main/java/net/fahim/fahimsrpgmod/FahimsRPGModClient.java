@@ -10,7 +10,6 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
-import net.neoforged.neoforge.common.NeoForge;
 
 @Mod(value = FahimsRPGMod.MOD_ID, dist = Dist.CLIENT)
 @EventBusSubscriber(modid = FahimsRPGMod.MOD_ID, value = Dist.CLIENT)
@@ -18,7 +17,7 @@ public class FahimsRPGModClient {
 
     public FahimsRPGModClient(ModContainer container) {
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
-        NeoForge.EVENT_BUS.register(ModHudRenderer.class);
+
     }
 
     @SubscribeEvent
