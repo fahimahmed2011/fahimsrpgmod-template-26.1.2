@@ -1,4 +1,4 @@
-D{
+{
   "parent": "minecraft:item/bow",
   "textures": {
     "layer0": "fahimsrpgmod:item/crude_bow_pulling_2"
