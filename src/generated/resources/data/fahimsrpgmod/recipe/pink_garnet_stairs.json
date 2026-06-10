@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "azurite",
+  "key": {
+    "#": "fahimsrpgmod:pink_garnet_block"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "fahimsrpgmod:pink_garnet_stairs"
+  }
+}

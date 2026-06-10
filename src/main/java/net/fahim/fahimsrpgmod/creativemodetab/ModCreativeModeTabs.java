@@ -27,6 +27,8 @@ public class ModCreativeModeTabs {
                       output.accept(ModBlocks.PINK_GARNET_ORE);
                       output.accept(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
                       output.accept(ModBlocks.MAGIC_BLOCK);
+                      output.accept(ModBlocks.PINK_GARNET_STAIRS);
+                      output.accept(ModBlocks.PINK_GARNET_SLAB);
 
 
 
@@ -43,6 +45,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHISEL_ITEM);
                         output.accept(ModItems.STARLIGHT_ASHES);
                         output.accept(ModItems.CRUDE_BOW);
+
 
 
 
@@ -85,6 +88,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.AZURITE_ORE);
                         output.accept(ModBlocks.AZURITE_END_ORE);
                         output.accept(ModBlocks.AZURITE_NETHER_ORE);
+                        output.accept(ModBlocks.AZURITE_SLAB);
+                        output.accept(ModBlocks.AZURITE_STAIRS);
 
 
 

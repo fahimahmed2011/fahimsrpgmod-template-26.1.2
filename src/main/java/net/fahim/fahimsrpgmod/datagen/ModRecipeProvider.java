@@ -70,6 +70,19 @@ public class ModRecipeProvider extends RecipeProvider {
 
         oreSmelting(AZURITE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.AZURITE.get(), 0.25f, 200, "azurite");
         oreBlasting(AZURITE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.AZURITE.get(), 0.25f, 100, "azurite");
+
+        stairBuilder(ModBlocks.AZURITE_STAIRS.get(),Ingredient.of(ModBlocks.AZURITE_BLOCK))
+                .unlockedBy(getHasName(ModBlocks.AZURITE_BLOCK.get()), has(ModBlocks.AZURITE_BLOCK))
+                .group("azurite")
+                .save(output);
+        slab(RecipeCategory.BUILDING_BLOCKS,ModBlocks.AZURITE_SLAB.get(),ModBlocks.AZURITE_BLOCK.get());
+
+
+        stairBuilder(ModBlocks.PINK_GARNET_STAIRS.get(),Ingredient.of(ModBlocks.PINK_GARNET_BLOCK))
+                .unlockedBy(getHasName(ModBlocks.PINK_GARNET_BLOCK.get()), has(ModBlocks.PINK_GARNET_BLOCK))
+                .group("azurite")
+                .save(output);
+        slab(RecipeCategory.BUILDING_BLOCKS,ModBlocks.PINK_GARNET_BLOCK.get(),ModBlocks.PINK_GARNET_BLOCK.get());
     }
 
     @Override

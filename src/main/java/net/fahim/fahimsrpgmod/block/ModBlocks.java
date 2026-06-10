@@ -10,9 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.enchantment.EnchantmentInstance;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -77,6 +75,21 @@ public static final DeferredBlock<Block> AZURITE_DEEPSLATE_ORE =  registerblock(
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerblock("magic_block",
             properties -> new MagicBlock(properties.strength(2f)
                     .requiresCorrectToolForDrops().sound(SoundType.DECORATED_POT)),Component.translatable("tooltip.fahimsrpgmod.magic_block.tooltip"));
+
+    public static final DeferredBlock<Block> AZURITE_STAIRS = registerblock("azurite_stairs",
+            properties -> new StairBlock(ModBlocks.AZURITE_BLOCK.get().defaultBlockState(),properties.strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> PINK_GARNET_STAIRS = registerblock("pink_garnet_stairs",
+            properties -> new StairBlock(ModBlocks.PINK_GARNET_BLOCK.get().defaultBlockState(),properties.strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+ public static final DeferredBlock<Block> AZURITE_SLAB = registerblock("azurite-slab",
+            properties -> new SlabBlock(properties.strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+ public static final DeferredBlock<Block> PINK_GARNET_SLAB = registerblock("pink_garnet_slab",
+            properties -> new SlabBlock(properties.strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
 
 
 

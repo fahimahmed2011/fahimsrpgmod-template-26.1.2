@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "fahimsrpgmod:block/azurite_block",
+    "side": "fahimsrpgmod:block/azurite_block",
+    "top": "fahimsrpgmod:block/azurite_block"
+  }
+}

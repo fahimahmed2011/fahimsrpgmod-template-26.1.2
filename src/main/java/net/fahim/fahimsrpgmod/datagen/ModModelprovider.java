@@ -33,10 +33,10 @@ public class ModModelprovider extends ModelProvider {
 
 
         /* BLOCKS*/
-        blockModels.createTrivialCube(ModBlocks.PINK_GARNET_BLOCK.get());
+       // blockModels.createTrivialCube(ModBlocks.PINK_GARNET_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.PINK_GARNET_ORE.get());
         blockModels.createTrivialCube(ModBlocks.PINK_GARNET_DEEPSLATE_ORE.get());
-        blockModels.createTrivialCube(ModBlocks.AZURITE_BLOCK.get());
+        //blockModels.createTrivialCube(ModBlocks.AZURITE_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.RAW_PINK_GARNET_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.AZURITE_DEEPSLATE_ORE.get());
         blockModels.createTrivialCube(ModBlocks.AZURITE_ORE.get());
@@ -46,6 +46,15 @@ public class ModModelprovider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.PINK_GARNET_NETHER_ORE.get());
         blockModels.createTrivialCube(ModBlocks.PINK_GARNET_END_ORE.get());
         blockModels.createTrivialCube(ModBlocks.MAGIC_BLOCK.get());
+
+        blockModels.family(ModBlocks.AZURITE_BLOCK.get())
+                .stairs(ModBlocks.AZURITE_STAIRS.get())
+                .slab(ModBlocks.AZURITE_SLAB.get());
+
+
+        blockModels.family(ModBlocks.PINK_GARNET_BLOCK.get())
+                .stairs(ModBlocks.PINK_GARNET_STAIRS.get())
+                .slab(ModBlocks.PINK_GARNET_SLAB.get());
 
     }
 }

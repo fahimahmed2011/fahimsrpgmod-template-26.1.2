@@ -30,7 +30,11 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.AZURITE_END_ORE.get())
                 .add(ModBlocks.PINK_GARNET_ORE.get())
                 .add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE.get())
-                .add(ModBlocks.MAGIC_BLOCK.get());
+                .add(ModBlocks.MAGIC_BLOCK.get())
+                .add(ModBlocks.AZURITE_STAIRS.get())
+                .add(ModBlocks.AZURITE_SLAB.get())
+                .add(ModBlocks.PINK_GARNET_STAIRS.get())
+                .add(ModBlocks.PINK_GARNET_SLAB.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.AZURITE_ORE.get())
