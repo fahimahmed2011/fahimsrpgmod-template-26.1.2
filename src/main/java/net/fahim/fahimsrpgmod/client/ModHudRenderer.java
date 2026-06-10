@@ -9,10 +9,10 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RenderGuiEvent;
 
 @EventBusSubscriber(modid = "fahimsrpgmod", value = Dist.CLIENT)
-public class BowOverlayRenderer {
+public class ModHudRenderer {
 
     @SubscribeEvent
-    public static void onRenderGui(RenderGuiEvent.Post event) {
+    public static void onRenderHud(RenderGuiEvent.Post event) {
         Minecraft mc = Minecraft.getInstance();
         if (mc.player == null) return;
 
@@ -20,17 +20,20 @@ public class BowOverlayRenderer {
         if (!(stack.getItem() instanceof CrudeBowItem)) return;
 
         int ticksUsed = mc.player.getTicksUsingItem();
-        if (ticksUsed <= 10) return;
+        if (ticksUsed <= 0) return;
 
-        float progress = Math.min((ticksUsed - 10) / 10f, 1f);
-        int barHeight = (int)(mc.getWindow().getGuiScaledHeight() * 0.12f * progress);
+        float charge = Math.min(ticksUsed / 20f, 1f);
+        int barWidth = (int)(100 * charge);
 
-        int screenWidth = mc.getWindow().getGuiScaledWidth();
-        int screenHeight = mc.getWindow().getGuiScaledHeight();
+        int screenW = mc.getWindow().getGuiScaledWidth();
+        int screenH = mc.getWindow().getGuiScaledHeight();
 
-        // top bar
-        event.getGuiGraphics().fill(0, 0, screenWidth, barHeight, 0xFF000000);
-        // bottom bar
-        event.getGuiGraphics().fill(0, screenHeight - barHeight, screenWidth, screenHeight, 0xFF000000);
+        event.getGuiGraphics().fill(
+                screenW / 2 - 50,
+                screenH - 30,
+                screenW / 2 - 50 + barWidth,
+                screenH - 24,
+                0xFF00FF00
+        );
     }
 }

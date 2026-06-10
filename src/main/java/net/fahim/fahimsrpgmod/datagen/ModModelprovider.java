@@ -9,7 +9,7 @@ import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ItemModelUtils;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceLocation;
+
 
 public class ModModelprovider extends ModelProvider {
     public ModModelprovider(PackOutput output) {
@@ -28,12 +28,7 @@ public class ModModelprovider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.END_FIRE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.STARLIGHT_ASHES.get(), ModelTemplates.FLAT_ITEM);
 
-        itemModels.itemModelOutput.accept(
-                ModItems.CRUDE_BOW.get().builtInRegistryHolder(),
-                ItemModelUtils.plainModel(
-                        ResourceLocation.parse("fahimsrpgmod:item/crude_bow")
-                )
-        );
+        itemModels.generateBow(ModItems.CRUDE_BOW.get());
 
 
 
