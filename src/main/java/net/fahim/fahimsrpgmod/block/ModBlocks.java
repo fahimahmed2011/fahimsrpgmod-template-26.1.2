@@ -72,6 +72,22 @@ public static final DeferredBlock<Block> AZURITE_DEEPSLATE_ORE =  registerblock(
             properties -> new Block(properties.strength(6f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
+    public static final DeferredBlock<Block> SHADOWITE =  registerblock("shadowite",
+            properties -> new Block(properties.strength(6f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> SUNSTONE =  registerblock("sunstone",
+            properties -> new Block(properties.strength(6f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> FROSTITE =  registerblock("frostite",
+            properties -> new Block(properties.strength(6f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> VOID_STONE =  registerblock("void_stone",
+            properties -> new Block(properties.strength(6f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerblock("magic_block",
             properties -> new MagicBlock(properties.strength(2f)
                     .requiresCorrectToolForDrops().sound(SoundType.DECORATED_POT)),Component.translatable("tooltip.fahimsrpgmod.magic_block.tooltip"));

@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "humanoid": [
+      {"texture": "fahimsrpgmod:azurite/outer"}
+    ],
+    "humanoid_leggings": [
+      {"texture": "fahimsrpgmod:azurite/inner"}
+    ]
+  }
+}

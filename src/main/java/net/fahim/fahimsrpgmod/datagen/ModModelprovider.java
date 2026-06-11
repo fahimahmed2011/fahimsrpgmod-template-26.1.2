@@ -27,12 +27,12 @@ public class ModModelprovider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.ONION.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.END_FIRE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.STARLIGHT_ASHES.get(), ModelTemplates.FLAT_ITEM);
-
+         //GARNET
         itemModels.generateFlatItem(ModItems.PINK_GARNET_HELMET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.PINK_GARNET_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.PINK_GARNET_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.PINK_GARNET_BOOTS.get(), ModelTemplates.FLAT_ITEM);
-
+        //AZURITE
         itemModels.generateFlatItem(ModItems.AZURITE_HELMET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.AZURITE_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.AZURITE_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);

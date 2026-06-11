@@ -3,10 +3,12 @@ package net.fahim.fahimsrpgmod.item.custom;
 import com.google.common.collect.Maps;
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.item.equipment.EquipmentAsset;
@@ -29,7 +31,7 @@ public class ModArmorMaterials {
             SoundEvents.ARMOR_EQUIP_DIAMOND,
             1.5f,
             0.0f,
-            ItemTags.REPAIRS_DIAMOND_ARMOR,
+            TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID, "repairs_pink_garnet_armor")),
             PINK_GARNET_KEY
     );
     public static final ResourceKey<EquipmentAsset> AZURITE_KEY = ResourceKey.create(
@@ -42,7 +44,7 @@ public class ModArmorMaterials {
             SoundEvents.ARMOR_EQUIP_DIAMOND,
             1.5f,
             0.0f,
-            ItemTags.REPAIRS_DIAMOND_ARMOR,
+            TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID, "repairs_azurite_armor")),
             AZURITE_KEY);
 
 

@@ -65,6 +65,10 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.RAW_AZURITE);
                 output.accept(ModItems.METAL_DETECTOR);
                 output.accept(ModItems.END_FIRE);
+                output.accept(ModItems.AZURITE_HELMET);      // ADD THIS
+                output.accept(ModItems.AZURITE_CHESTPLATE);  // ADD THIS
+                output.accept(ModItems.AZURITE_LEGGINGS);    // ADD THIS
+                output.accept(ModItems.AZURITE_BOOTS);       // ADD THIS
 
             }).build());
 

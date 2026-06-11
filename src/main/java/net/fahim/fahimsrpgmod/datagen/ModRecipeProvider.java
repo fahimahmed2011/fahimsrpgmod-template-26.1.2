@@ -114,6 +114,36 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('P', ModItems.PINK_GARNET.get())
                 .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
                 .save(output);
+//AZURITE
+        shaped(RecipeCategory.COMBAT, ModItems.AZURITE_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .define('A', ModItems.AZURITE.get())
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE))
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.AZURITE_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.AZURITE.get())
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE))
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.AZURITE_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.AZURITE.get())
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE))
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.AZURITE_BOOTS.get())
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.AZURITE.get())
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE))
+                .save(output);
     }
 
     @Override
