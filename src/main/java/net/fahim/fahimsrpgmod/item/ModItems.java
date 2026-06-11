@@ -5,12 +5,17 @@ import net.fahim.fahimsrpgmod.food.ModFoods;
 import net.fahim.fahimsrpgmod.item.custom.ChiselItem;
 import net.fahim.fahimsrpgmod.item.custom.CrudeBowItem;
 import net.fahim.fahimsrpgmod.item.custom.MetalDectectorItem;
+
+import net.fahim.fahimsrpgmod.item.custom.ModArmorMaterials;
+import net.minecraft.client.renderer.entity.ArmorModelSet;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
+import net.minecraft.world.item.equipment.ArmorMaterial;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -33,6 +38,100 @@ public class ModItems {
 
     public static final DeferredItem<Item> CRUDE_BOW = ITEMS.registerItem("crude_bow",
             properties -> new CrudeBowItem(properties.durability(500)));
+
+    //GARNET ARMOUR
+    public static final DeferredItem<Item> PINK_GARNET_HELMET = ITEMS.registerItem(
+            "pink_garnet_helmet",
+            props -> new Item(props.humanoidArmor(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorType.HELMET))
+    );
+
+    public static final DeferredItem<Item> PINK_GARNET_CHESTPLATE = ITEMS.registerItem(
+            "pink_garnet_chestplate",
+            props -> new Item(props.humanoidArmor(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorType.CHESTPLATE))
+    );
+
+    public static final DeferredItem<Item> PINK_GARNET_LEGGINGS = ITEMS.registerItem(
+            "pink_garnet_leggings",
+            props -> new Item(props.humanoidArmor(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorType.LEGGINGS))
+    );
+
+    public static final DeferredItem<Item> PINK_GARNET_BOOTS = ITEMS.registerItem(
+            "pink_garnet_boots",
+            props -> new Item(props.humanoidArmor(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorType.BOOTS))
+    );
+
+    //AZURITE ARMOUR
+    public static final DeferredItem<Item> AZURITE_HELMET = ITEMS.registerItem(
+            "azurite_helmet",
+            props -> new Item(props.humanoidArmor(ModArmorMaterials.AZURITE_ARMOR_MATERIAL, ArmorType.HELMET))
+    );
+
+    public static final DeferredItem<Item> AZURITE_CHESTPLATE = ITEMS.registerItem(
+            "azurite_chestplate",
+            props -> new Item(props.humanoidArmor(ModArmorMaterials.AZURITE_ARMOR_MATERIAL, ArmorType.CHESTPLATE))
+    );
+
+    public static final DeferredItem<Item> AZURITE_LEGGINGS = ITEMS.registerItem(
+            "azurite_leggings",
+            props -> new Item(props.humanoidArmor(ModArmorMaterials.AZURITE_ARMOR_MATERIAL, ArmorType.LEGGINGS))
+    );
+
+    public static final DeferredItem<Item> AZURITE_BOOTS = ITEMS.registerItem(
+            "azurite_boots",
+            props -> new Item(props.humanoidArmor(ModArmorMaterials.AZURITE_ARMOR_MATERIAL, ArmorType.BOOTS))
+    );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -45,6 +45,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHISEL_ITEM);
                         output.accept(ModItems.STARLIGHT_ASHES);
                         output.accept(ModItems.CRUDE_BOW);
+                        output.accept(ModItems.PINK_GARNET_HELMET);      // ADD THIS
+                        output.accept(ModItems.PINK_GARNET_CHESTPLATE);  // ADD THIS
+                        output.accept(ModItems.PINK_GARNET_LEGGINGS);    // ADD THIS
+                        output.accept(ModItems.PINK_GARNET_BOOTS);       // ADD THIS
 
 
 

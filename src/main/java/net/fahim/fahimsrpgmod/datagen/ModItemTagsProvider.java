@@ -5,6 +5,8 @@ import net.fahim.fahimsrpgmod.item.ModItems;
 import net.fahim.fahimsrpgmod.tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.Identifier;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;
 
@@ -23,5 +25,10 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 .add(Items.COPPER_INGOT)
                 .add(ModItems.PINK_GARNET.get());
 
+        tag(ItemTags.create(Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID, "repairs_pink_garnet_armor")))
+                .add(ModItems.PINK_GARNET.get());
+
+        tag(ItemTags.create(Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID, "repairs_azurite_armor")))
+                .add(ModItems.AZURITE.get());
     }
 }

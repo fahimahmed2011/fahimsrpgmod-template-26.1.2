@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "fahimsrpgmod:pink_garnet/outer"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "fahimsrpgmod:pink_garnet/inner"
+      }
+    ]
+  }
+}

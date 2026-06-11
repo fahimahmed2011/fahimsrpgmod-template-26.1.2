@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": "fahimsrpgmod:pink_garnet"
+  },
+  "pattern": [
+    "P P",
+    "PPP",
+    "PPP"
+  ],
+  "result": {
+    "id": "fahimsrpgmod:pink_garnet_chestplate"
+  }
+}

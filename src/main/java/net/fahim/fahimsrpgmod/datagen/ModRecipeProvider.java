@@ -83,6 +83,37 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("azurite")
                 .save(output);
         slab(RecipeCategory.BUILDING_BLOCKS,ModBlocks.PINK_GARNET_BLOCK.get(),ModBlocks.PINK_GARNET_BLOCK.get());
+
+
+        shaped(RecipeCategory.COMBAT, ModItems.PINK_GARNET_HELMET.get())
+                .pattern("PPP")
+                .pattern("P P")
+                .define('P', ModItems.PINK_GARNET.get())
+                .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.PINK_GARNET_CHESTPLATE.get())
+                .pattern("P P")
+                .pattern("PPP")
+                .pattern("PPP")
+                .define('P', ModItems.PINK_GARNET.get())
+                .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.PINK_GARNET_LEGGINGS.get())
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("P P")
+                .define('P', ModItems.PINK_GARNET.get())
+                .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.PINK_GARNET_BOOTS.get())
+                .pattern("P P")
+                .pattern("P P")
+                .define('P', ModItems.PINK_GARNET.get())
+                .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
+                .save(output);
     }
 
     @Override

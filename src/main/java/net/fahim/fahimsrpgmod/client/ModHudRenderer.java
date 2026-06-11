@@ -22,7 +22,6 @@ public class ModHudRenderer {
 
         ItemStack stack = mc.player.getMainHandItem();
         boolean isDrawing = mc.player.isUsingItem() && stack.getItem() instanceof CrudeBowItem;
-        System.out.println("isUsing: " + mc.player.isUsingItem() + " | isBow: " + (stack.getItem() instanceof CrudeBowItem));
 
         if (isDrawing) {
             currentCharge = Math.min(currentCharge + 0.05f, 1f);
