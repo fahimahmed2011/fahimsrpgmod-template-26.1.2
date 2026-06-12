@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fahimsrpgmod:pink_garnet_block"
+        "recipe": "fahimsrpgmod:garnet_crusher"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "fahimsrpgmod:pink_garnet_block"
+      "fahimsrpgmod:garnet_crusher"
     ]
   }
 }

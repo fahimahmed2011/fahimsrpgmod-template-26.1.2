@@ -49,12 +49,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.PINK_GARNET_CHESTPLATE);
                         output.accept(ModItems.PINK_GARNET_LEGGINGS);
 
-                        output.accept(ModItems.CRIMSONITE_SWORD);
-                        output.accept(ModItems.CRIMSONITE_PICKAXE);
-                        output.accept(ModItems.CRIMSONITE_AXE);
-                        output.accept(ModItems.CRIMSONITE_HOE);
-                        output.accept(ModItems.CRIMSONITE_SHOVEL);
-                        output.accept(ModItems.CRIMSONITE_SPEAR);
+                        output.accept(ModItems.GARNETS_WRATH);
+                        output.accept(ModItems.GARNET_CLEAVER);
+                        output.accept(ModItems.GARNET_CRUSHER);
+                        output.accept(ModItems.GARNET_TILLER);
+                        output.accept(ModItems.GARNET_DELVER);
+                        output.accept(ModItems.GARNET_IMPALER);
 
 
 

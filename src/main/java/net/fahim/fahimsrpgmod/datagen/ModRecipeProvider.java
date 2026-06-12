@@ -43,6 +43,22 @@ public class ModRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes() {
+        // PINK GARNET BLOCK COMPRESS / DECOMPRESS
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GARNET_BLOCK.get())
+                .pattern("PPP")
+                .pattern("PPP")
+                .pattern("PPP")
+                .define('P', ModItems.PINK_GARNET.get())
+                .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
+                .group("pink_garnet")
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ModItems.PINK_GARNET.get(), 9)
+                .requires(ModBlocks.PINK_GARNET_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.PINK_GARNET_BLOCK.get()), has(ModBlocks.PINK_GARNET_BLOCK))
+                .group("pink_garnet")
+                .save(output);
+
         shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AZURITE_BLOCK.get())
                 .pattern("AAA")
                 .pattern("AAA")
@@ -65,11 +81,26 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("azurite")
                 .save(output, "fahimsrpgmod:azurite_from_blaze_powder");
 
-        List<ItemLike> AZURITE_SMELTABLES = List.of(ModItems.RAW_AZURITE, ModBlocks.AZURITE_ORE,
-                ModBlocks.AZURITE_DEEPSLATE_ORE, ModBlocks.AZURITE_NETHER_ORE, ModBlocks.AZURITE_END_ORE);
+        List<ItemLike> AZURITE_SMELTABLES = List.of
+                (ModItems.RAW_AZURITE,
+                ModBlocks.AZURITE_ORE,
+                ModBlocks.AZURITE_DEEPSLATE_ORE,
+                ModBlocks.AZURITE_NETHER_ORE,
+                ModBlocks.AZURITE_END_ORE);
 
         oreSmelting(AZURITE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.AZURITE.get(), 0.25f, 200, "azurite");
         oreBlasting(AZURITE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.AZURITE.get(), 0.25f, 100, "azurite");
+
+        List<ItemLike> PINK_GARNET_SMELTABLES = List.of(
+                ModItems.RAW_PINK_GARNET,
+                ModBlocks.PINK_GARNET_ORE,
+                ModBlocks.PINK_GARNET_DEEPSLATE_ORE,
+                ModBlocks.PINK_GARNET_NETHER_ORE,
+                ModBlocks.PINK_GARNET_END_ORE
+        );
+
+        oreSmelting(PINK_GARNET_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.PINK_GARNET.get(), 0.25f, 200, "pink_garnet");
+        oreBlasting(PINK_GARNET_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.PINK_GARNET.get(), 0.25f, 100, "pink_garnet");
 
         stairBuilder(ModBlocks.AZURITE_STAIRS.get(),Ingredient.of(ModBlocks.AZURITE_BLOCK))
                 .unlockedBy(getHasName(ModBlocks.AZURITE_BLOCK.get()), has(ModBlocks.AZURITE_BLOCK))
@@ -80,9 +111,9 @@ public class ModRecipeProvider extends RecipeProvider {
 
         stairBuilder(ModBlocks.PINK_GARNET_STAIRS.get(),Ingredient.of(ModBlocks.PINK_GARNET_BLOCK))
                 .unlockedBy(getHasName(ModBlocks.PINK_GARNET_BLOCK.get()), has(ModBlocks.PINK_GARNET_BLOCK))
-                .group("azurite")
+                .group("pink_garnet")
                 .save(output);
-        slab(RecipeCategory.BUILDING_BLOCKS,ModBlocks.PINK_GARNET_BLOCK.get(),ModBlocks.PINK_GARNET_BLOCK.get());
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GARNET_SLAB.get(), ModBlocks.PINK_GARNET_BLOCK.get());
 
 
         shaped(RecipeCategory.COMBAT, ModItems.PINK_GARNET_HELMET.get())
@@ -144,6 +175,130 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('A', ModItems.AZURITE.get())
                 .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE))
                 .save(output);
+
+
+        // PINK GARNET TOOLS & WEAPONS
+        shaped(RecipeCategory.COMBAT, ModItems.GARNETS_WRATH.get())
+                .pattern("P")
+                .pattern("P")
+                .pattern("S")
+                .define('P', ModItems.PINK_GARNET.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
+                .group("pink_garnet")
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.GARNET_CLEAVER.get())
+                .pattern("PP")
+                .pattern("PS")
+                .pattern(" S")
+                .define('P', ModItems.PINK_GARNET.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
+                .group("pink_garnet")
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.GARNET_CRUSHER.get())
+                .pattern("PPP")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('P', ModItems.PINK_GARNET.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
+                .group("pink_garnet")
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.GARNET_DELVER.get())
+                .pattern("P")
+                .pattern("S")
+                .pattern("S")
+                .define('P', ModItems.PINK_GARNET.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
+                .group("pink_garnet")
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.GARNET_TILLER.get())
+                .pattern("PP")
+                .pattern(" S")
+                .pattern(" S")
+                .define('P', ModItems.PINK_GARNET.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
+                .group("pink_garnet")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.GARNET_IMPALER.get())
+                .pattern(" P")
+                .pattern("PS")
+                .pattern("S ")
+                .define('P', ModItems.PINK_GARNET.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
+                .group("pink_garnet")
+                .save(output);
+
+        // AZURITE TOOLS & WEAPONS
+        shaped(RecipeCategory.COMBAT, ModItems.AZURITE_SWORD.get())
+                .pattern("A")
+                .pattern("A")
+                .pattern("S")
+                .define('A', ModItems.AZURITE.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE))
+                .group("azurite")
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.AZURITE_AXE.get())
+                .pattern("AA")
+                .pattern("AS")
+                .pattern(" S")
+                .define('A', ModItems.AZURITE.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE))
+                .group("azurite")
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.AZURITE_PICKAXE.get())
+                .pattern("AAA")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('A', ModItems.AZURITE.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE))
+                .group("azurite")
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.AZURITE_SHOVEL.get())
+                .pattern("A")
+                .pattern("S")
+                .pattern("S")
+                .define('A', ModItems.AZURITE.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE))
+                .group("azurite")
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.AZURITE_HOE.get())
+                .pattern("AA")
+                .pattern(" S")
+                .pattern(" S")
+                .define('A', ModItems.AZURITE.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE))
+                .group("azurite")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.AZURITE_SPEAR.get())
+                .pattern(" A")
+                .pattern("AS")
+                .pattern("S ")
+                .define('A', ModItems.AZURITE.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE))
+                .group("azurite")
+                .save(output);
+
     }
 
     @Override

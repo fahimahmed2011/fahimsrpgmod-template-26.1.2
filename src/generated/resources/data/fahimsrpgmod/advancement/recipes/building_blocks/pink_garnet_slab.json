@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pink_garnet": {
+    "has_pink_garnet_block": {
       "conditions": {
         "items": [
           {
-            "items": "fahimsrpgmod:pink_garnet"
+            "items": "fahimsrpgmod:pink_garnet_block"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fahimsrpgmod:pink_garnet_block"
+        "recipe": "fahimsrpgmod:pink_garnet_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_pink_garnet"
+      "has_pink_garnet_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "fahimsrpgmod:pink_garnet_block"
+      "fahimsrpgmod:pink_garnet_slab"
     ]
   }
 }

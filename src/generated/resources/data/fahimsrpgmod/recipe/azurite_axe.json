@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "azurite",
+  "key": {
+    "A": "fahimsrpgmod:azurite",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "AA",
+    "AS",
+    " S"
+  ],
+  "result": {
+    "id": "fahimsrpgmod:azurite_axe"
+  }
+}

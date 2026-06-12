@@ -30,5 +30,20 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
         tag(ModTags.Items.PINK_GARNET_REPAIRABLE)
                 .add(ModItems.PINK_GARNET.get());
+
+        tag(ItemTags.SWORDS).add(ModItems.AZURITE_SWORD.get());
+        tag(ItemTags.PICKAXES).add(ModItems.AZURITE_PICKAXE.get());
+        tag(ItemTags.AXES).add(ModItems.AZURITE_AXE.get());
+        tag(ItemTags.SHOVELS).add(ModItems.AZURITE_SHOVEL.get());
+        tag(ItemTags.HOES).add(ModItems.AZURITE_HOE.get());
+        tag(ItemTags.SPEARS).add(ModItems.AZURITE_SPEAR.get());
+
+
+        tag(ItemTags.SWORDS).add(ModItems.GARNETS_WRATH.get());
+        tag(ItemTags.PICKAXES).add(ModItems.GARNET_CRUSHER.get());
+        tag(ItemTags.AXES).add(ModItems.GARNET_CLEAVER.get());
+        tag(ItemTags.SHOVELS).add(ModItems.GARNET_DELVER.get());
+        tag(ItemTags.HOES).add(ModItems.GARNET_TILLER.get());
+        tag(ItemTags.SPEARS).add(ModItems.GARNET_IMPALER.get());
     }
 }

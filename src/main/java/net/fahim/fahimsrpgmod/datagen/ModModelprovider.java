@@ -27,6 +27,21 @@ public class ModModelprovider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.ONION.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.END_FIRE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.STARLIGHT_ASHES.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModels.generateFlatItem(ModItems.GARNETS_WRATH.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.GARNET_CLEAVER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.GARNET_CRUSHER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.GARNET_DELVER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.GARNET_TILLER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateSpear(ModItems.GARNET_IMPALER.get());
+
+        itemModels.generateFlatItem(ModItems.AZURITE_SPEAR.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.AZURITE_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.AZURITE_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.AZURITE_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.AZURITE_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.AZURITE_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
          //GARNET
         itemModels.generateFlatItem(ModItems.PINK_GARNET_HELMET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.PINK_GARNET_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);

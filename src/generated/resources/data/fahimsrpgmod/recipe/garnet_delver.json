@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "pink_garnet",
+  "key": {
+    "P": "fahimsrpgmod:pink_garnet",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "P",
+    "S",
+    "S"
+  ],
+  "result": {
+    "id": "fahimsrpgmod:garnet_delver"
+  }
+}

@@ -111,23 +111,22 @@ public static final DeferredItem<Item> AZURITE_SPEAR = ITEMS.registerItem("azuri
                     3.5f,13f,8.5f,5.1f,13.37f,14.67f)));
 
 
-public static final DeferredItem<Item> CRIMSONITE_SWORD = ITEMS.registerItem("crimsonite_sword",
+public static final DeferredItem<Item> GARNETS_WRATH = ITEMS.registerItem("garnets_wrath",
             properties -> new Item(properties.sword(ModToolTiers.PINK_GARNET,6,-2.2f)));
 
-public static final DeferredItem<Item> CRIMSONITE_AXE = ITEMS.registerItem("crimsonite_axe",
+public static final DeferredItem<Item> GARNET_CLEAVER = ITEMS.registerItem("garnet_cleaver",
             properties -> new AxeItem(ModToolTiers.PINK_GARNET,8,-2.2f,properties));
 
-
-public static final DeferredItem<Item> CRIMSONITE_PICKAXE = ITEMS.registerItem("crimsonite_pickaxe",
+public static final DeferredItem<Item> GARNET_CRUSHER = ITEMS.registerItem("garnet_crusher",
             properties -> new Item(properties.pickaxe(ModToolTiers.PINK_GARNET,2,-2.2f)));
 
-public static final DeferredItem<Item> CRIMSONITE_SHOVEL = ITEMS.registerItem("crimsonite_shovel",
+public static final DeferredItem<Item> GARNET_DELVER = ITEMS.registerItem("garnet_delver",
             properties -> new ShovelItem(ModToolTiers.PINK_GARNET,1.7f,-2.2f,properties));
 
-public static final DeferredItem<Item> CRIMSONITE_HOE = ITEMS.registerItem("crimsonite_hoe",
+public static final DeferredItem<Item> GARNET_TILLER = ITEMS.registerItem("garnet_tiller",
             properties -> new HoeItem(ModToolTiers.PINK_GARNET,0,-2.2f,properties));
 
-public static final DeferredItem<Item> CRIMSONITE_SPEAR = ITEMS.registerItem("crimsonite_spear",
+public static final DeferredItem<Item> GARNET_IMPALER = ITEMS.registerItem("garnet_impaler",
             properties -> new Item(properties.spear(ModToolTiers.PINK_GARNET,1f,-2.2f,0.5f,
                     3.1f,14f,8.7f,5.7f,14f,14f)));
 

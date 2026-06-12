@@ -1,17 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "pink_garnet",
   "key": {
     "#": "fahimsrpgmod:pink_garnet_block"
   },
   "pattern": [
-    "#  ",
-    "## ",
     "###"
   ],
   "result": {
-    "count": 4,
-    "id": "fahimsrpgmod:pink_garnet_stairs"
+    "count": 6,
+    "id": "fahimsrpgmod:pink_garnet_slab"
   }
 }
