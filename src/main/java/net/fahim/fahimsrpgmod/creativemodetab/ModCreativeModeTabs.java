@@ -45,10 +45,17 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHISEL_ITEM);
                         output.accept(ModItems.STARLIGHT_ASHES);
                         output.accept(ModItems.CRUDE_BOW);
-                        output.accept(ModItems.PINK_GARNET_HELMET);      // ADD THIS
-                        output.accept(ModItems.PINK_GARNET_CHESTPLATE);  // ADD THIS
-                        output.accept(ModItems.PINK_GARNET_LEGGINGS);    // ADD THIS
-                        output.accept(ModItems.PINK_GARNET_BOOTS);       // ADD THIS
+                        output.accept(ModItems.PINK_GARNET_HELMET);
+                        output.accept(ModItems.PINK_GARNET_CHESTPLATE);
+                        output.accept(ModItems.PINK_GARNET_LEGGINGS);
+
+                        output.accept(ModItems.CRIMSONITE_SWORD);
+                        output.accept(ModItems.CRIMSONITE_PICKAXE);
+                        output.accept(ModItems.CRIMSONITE_AXE);
+                        output.accept(ModItems.CRIMSONITE_HOE);
+                        output.accept(ModItems.CRIMSONITE_SHOVEL);
+                        output.accept(ModItems.CRIMSONITE_SPEAR);
+
 
 
 
@@ -65,10 +72,17 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.RAW_AZURITE);
                 output.accept(ModItems.METAL_DETECTOR);
                 output.accept(ModItems.END_FIRE);
-                output.accept(ModItems.AZURITE_HELMET);      // ADD THIS
-                output.accept(ModItems.AZURITE_CHESTPLATE);  // ADD THIS
-                output.accept(ModItems.AZURITE_LEGGINGS);    // ADD THIS
-                output.accept(ModItems.AZURITE_BOOTS);       // ADD THIS
+                output.accept(ModItems.AZURITE_HELMET);
+                output.accept(ModItems.AZURITE_CHESTPLATE);
+                output.accept(ModItems.AZURITE_LEGGINGS);
+                output.accept(ModItems.AZURITE_BOOTS);
+
+                output.accept(ModItems.AZURITE_SWORD);
+                output.accept(ModItems.AZURITE_AXE);
+                output.accept(ModItems.AZURITE_PICKAXE);
+                output.accept(ModItems.AZURITE_SHOVEL);
+                output.accept(ModItems.AZURITE_HOE);
+                output.accept(ModItems.AZURITE_SPEAR);
 
             }).build());
 

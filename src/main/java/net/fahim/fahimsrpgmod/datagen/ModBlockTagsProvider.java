@@ -49,5 +49,21 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.METAL_DETECTABLES)
                 .addTag(Tags.Blocks.ORES);
 
+        tag(ModTags.Blocks.NEEDS_AZURITE_TOOL)
+                .add(ModBlocks.MAGIC_BLOCK.get())
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+        tag(ModTags.Blocks.INCORRECT_FOR_AZURITE_TOOL)
+                .addTags(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(ModTags.Blocks.NEEDS_AZURITE_TOOL);
+
+        tag(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
+                .add(ModBlocks.MAGIC_BLOCK.get())
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .addTag(ModTags.Blocks.NEEDS_AZURITE_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_PINK_GARNET_TOOL)
+                .addTags(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL);
+
     }
 }

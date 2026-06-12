@@ -9,10 +9,7 @@ import net.fahim.fahimsrpgmod.item.custom.MetalDectectorItem;
 import net.fahim.fahimsrpgmod.item.custom.ModArmorMaterials;
 import net.minecraft.client.renderer.entity.ArmorModelSet;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.BowItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
@@ -81,62 +78,9 @@ public class ModItems {
             props -> new Item(props.humanoidArmor(ModArmorMaterials.AZURITE_ARMOR_MATERIAL, ArmorType.BOOTS))
     );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static final DeferredItem<Item> ONION = ITEMS.registerItem("onion",
-            properties -> new Item(properties.food(ModFoods.ONION, ModFoods.ONION_CONSUMABLE)){
+            properties -> new Item(properties.food(ModFoods.ONION, ModFoods.ONION_CONSUMABLE))
+            {
                 @Override
                 public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
                     builder.accept(Component.translatable("tooltip.fahimsrpgmod.onion.tooltip"));
@@ -146,6 +90,47 @@ public class ModItems {
 
 public static final DeferredItem<Item> END_FIRE = ITEMS.registerItem("end_fire",
             properties -> new Item(properties.stacksTo(32)));
+
+public static final DeferredItem<Item> AZURITE_SWORD = ITEMS.registerItem("azurite_sword",
+            properties -> new Item(properties.sword(ModToolTiers.AZURITE,4,-2.4f)));
+
+public static final DeferredItem<Item> AZURITE_PICKAXE = ITEMS.registerItem("azurite_pickaxe",
+            properties -> new Item(properties.pickaxe(ModToolTiers.AZURITE,1,-2.6f)));
+
+public static final DeferredItem<Item> AZURITE_AXE = ITEMS.registerItem("azurite_axe",
+            properties -> new AxeItem(ModToolTiers.AZURITE,7,-2.4f,properties));
+
+public static final DeferredItem<Item> AZURITE_HOE = ITEMS.registerItem("azurite_hoe",
+            properties -> new HoeItem(ModToolTiers.AZURITE,0,-2.4f,properties));
+
+public static final DeferredItem<Item> AZURITE_SHOVEL = ITEMS.registerItem("azurite_shovel",
+            properties -> new ShovelItem(ModToolTiers.AZURITE,1.6f,-2.4f,properties));
+
+public static final DeferredItem<Item> AZURITE_SPEAR = ITEMS.registerItem("azurite_spear",
+            properties -> new Item(properties.spear(ModToolTiers.AZURITE,0.96f,0.7f,0.8f,
+                    3.5f,13f,8.5f,5.1f,13.37f,14.67f)));
+
+
+public static final DeferredItem<Item> CRIMSONITE_SWORD = ITEMS.registerItem("crimsonite_sword",
+            properties -> new Item(properties.sword(ModToolTiers.PINK_GARNET,6,-2.2f)));
+
+public static final DeferredItem<Item> CRIMSONITE_AXE = ITEMS.registerItem("crimsonite_axe",
+            properties -> new AxeItem(ModToolTiers.PINK_GARNET,8,-2.2f,properties));
+
+
+public static final DeferredItem<Item> CRIMSONITE_PICKAXE = ITEMS.registerItem("crimsonite_pickaxe",
+            properties -> new Item(properties.pickaxe(ModToolTiers.PINK_GARNET,2,-2.2f)));
+
+public static final DeferredItem<Item> CRIMSONITE_SHOVEL = ITEMS.registerItem("crimsonite_shovel",
+            properties -> new ShovelItem(ModToolTiers.PINK_GARNET,1.7f,-2.2f,properties));
+
+public static final DeferredItem<Item> CRIMSONITE_HOE = ITEMS.registerItem("crimsonite_hoe",
+            properties -> new HoeItem(ModToolTiers.PINK_GARNET,0,-2.2f,properties));
+
+public static final DeferredItem<Item> CRIMSONITE_SPEAR = ITEMS.registerItem("crimsonite_spear",
+            properties -> new Item(properties.spear(ModToolTiers.PINK_GARNET,1f,-2.2f,0.5f,
+                    3.1f,14f,8.7f,5.7f,14f,14f)));
+
 
 public static final DeferredItem<Item> STARLIGHT_ASHES = ITEMS.registerItem("starlight_ashes",
             properties -> new Item(properties.stacksTo(32)));

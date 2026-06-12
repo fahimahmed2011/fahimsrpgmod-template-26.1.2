@@ -25,10 +25,10 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 .add(Items.COPPER_INGOT)
                 .add(ModItems.PINK_GARNET.get());
 
-        tag(ItemTags.create(Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID, "repairs_pink_garnet_armor")))
-                .add(ModItems.PINK_GARNET.get());
-
-        tag(ItemTags.create(Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID, "repairs_azurite_armor")))
+        tag(ModTags.Items.AZURITE_REPAIRABLE)
                 .add(ModItems.AZURITE.get());
+
+        tag(ModTags.Items.PINK_GARNET_REPAIRABLE)
+                .add(ModItems.PINK_GARNET.get());
     }
 }
