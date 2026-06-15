@@ -7,11 +7,11 @@
     "S": "minecraft:stick"
   },
   "pattern": [
-    " P",
-    "PS",
-    "S "
+    "PPP",
+    " S ",
+    " S "
   ],
   "result": {
-    "id": "fahimsrpgmod:garnet_impaler"
+    "id": "fahimsrpgmod:garnet_pickaxe"
   }
 }

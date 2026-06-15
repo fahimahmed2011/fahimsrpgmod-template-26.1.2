@@ -198,7 +198,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("pink_garnet")
                 .save(output);
 
-        shaped(RecipeCategory.TOOLS, ModItems.GARNET_CRUSHER.get())
+        shaped(RecipeCategory.TOOLS, ModItems.GARNET_PICKAXE.get())
                 .pattern("PPP")
                 .pattern(" S ")
                 .pattern(" S ")
@@ -228,15 +228,15 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("pink_garnet")
                 .save(output);
 
-        shaped(RecipeCategory.COMBAT, ModItems.GARNET_IMPALER.get())
-                .pattern(" P")
-                .pattern("PS")
-                .pattern("S ")
-                .define('P', ModItems.PINK_GARNET.get())
-                .define('S', Items.STICK)
-                .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
-                .group("pink_garnet")
-                .save(output);
+       // shaped(RecipeCategory.COMBAT, ModItems.GARNET_IMPALER.get())
+               // .pattern(" P")
+               // .pattern("PS")
+               // .pattern("S ")
+               // .define('P', ModItems.PINK_GARNET.get())
+              //  .define('S', Items.STICK)
+               // .unlockedBy(getHasName(ModItems.PINK_GARNET.get()), has(ModItems.PINK_GARNET))
+               // .group("pink_garnet")
+               // .save(output);
 
         // AZURITE TOOLS & WEAPONS
         shaped(RecipeCategory.COMBAT, ModItems.AZURITE_SWORD.get())

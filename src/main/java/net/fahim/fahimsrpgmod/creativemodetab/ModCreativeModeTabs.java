@@ -51,10 +51,10 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.GARNETS_WRATH);
                         output.accept(ModItems.GARNET_CLEAVER);
-                        output.accept(ModItems.GARNET_CRUSHER);
+                        output.accept(ModItems.GARNET_PICKAXE);
                         output.accept(ModItems.GARNET_TILLER);
                         output.accept(ModItems.GARNET_DELVER);
-                        output.accept(ModItems.GARNET_IMPALER);
+                       // output.accept(ModItems.GARNET_IMPALER);
 
 
 

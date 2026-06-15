@@ -40,10 +40,10 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
 
         tag(ItemTags.SWORDS).add(ModItems.GARNETS_WRATH.get());
-        tag(ItemTags.PICKAXES).add(ModItems.GARNET_CRUSHER.get());
+        tag(ItemTags.PICKAXES).add(ModItems.GARNET_PICKAXE.get());
         tag(ItemTags.AXES).add(ModItems.GARNET_CLEAVER.get());
         tag(ItemTags.SHOVELS).add(ModItems.GARNET_DELVER.get());
         tag(ItemTags.HOES).add(ModItems.GARNET_TILLER.get());
-        tag(ItemTags.SPEARS).add(ModItems.GARNET_IMPALER.get());
+        //tag(ItemTags.SPEARS).add(ModItems.GARNET_IMPALER.get());
     }
 }

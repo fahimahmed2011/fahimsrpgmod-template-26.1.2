@@ -4,6 +4,7 @@ import net.fahim.fahimsrpgmod.FahimsRPGMod;
 import net.fahim.fahimsrpgmod.block.custom.MagicBlock;
 import net.fahim.fahimsrpgmod.item.ModItems;
 import net.minecraft.network.chat.Component;
+import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
@@ -19,6 +20,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class ModBlocks {
 public static final DeferredRegister.Blocks BLOCKS =
@@ -71,6 +73,24 @@ public static final DeferredBlock<Block> AZURITE_DEEPSLATE_ORE =  registerblock(
     public static final DeferredBlock<Block> PINK_GARNET_DEEPSLATE_ORE =  registerblock("pink_garnet_deepslate_ore",
             properties -> new Block(properties.strength(6f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+
+    public static final DeferredBlock<Block> ONYX_ORE = registerblock("onyx_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(3.0f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_ONYX_ORE = registerblock("deepslate_onyx_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(3, 6), properties.strength(4.5f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> ONYX_BLOCK = registerblock("onyx_block",
+            properties -> new Block(properties.strength(5.0f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> RAW_ONYX_BLOCK = registerblock("raw_onyx_block",
+            properties -> new Block(properties.strength(5.0f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
 
     //public static final DeferredBlock<Block> SHADOWITE =  registerblock("shadowite",
 //properties -> new Block(properties.strength(6f)

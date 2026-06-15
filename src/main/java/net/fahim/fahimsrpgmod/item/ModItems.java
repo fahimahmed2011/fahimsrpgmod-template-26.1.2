@@ -2,11 +2,9 @@ package net.fahim.fahimsrpgmod.item;
 
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
 import net.fahim.fahimsrpgmod.food.ModFoods;
-import net.fahim.fahimsrpgmod.item.custom.ChiselItem;
-import net.fahim.fahimsrpgmod.item.custom.CrudeBowItem;
-import net.fahim.fahimsrpgmod.item.custom.MetalDectectorItem;
+import net.fahim.fahimsrpgmod.item.custom.*;
+import net.fahim.fahimsrpgmod.item.custom.ScytheItem;
 
-import net.fahim.fahimsrpgmod.item.custom.ModArmorMaterials;
 import net.minecraft.client.renderer.entity.ArmorModelSet;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
@@ -18,6 +16,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(FahimsRPGMod.MOD_ID);
@@ -117,7 +116,7 @@ public static final DeferredItem<Item> GARNETS_WRATH = ITEMS.registerItem("garne
 public static final DeferredItem<Item> GARNET_CLEAVER = ITEMS.registerItem("garnet_cleaver",
             properties -> new AxeItem(ModToolTiers.PINK_GARNET,8,-2.2f,properties));
 
-public static final DeferredItem<Item> GARNET_CRUSHER = ITEMS.registerItem("garnet_crusher",
+public static final DeferredItem<Item> GARNET_PICKAXE = ITEMS.registerItem("garnet_pickaxe",
             properties -> new Item(properties.pickaxe(ModToolTiers.PINK_GARNET,2,-2.2f)));
 
 public static final DeferredItem<Item> GARNET_DELVER = ITEMS.registerItem("garnet_delver",
@@ -126,9 +125,16 @@ public static final DeferredItem<Item> GARNET_DELVER = ITEMS.registerItem("garne
 public static final DeferredItem<Item> GARNET_TILLER = ITEMS.registerItem("garnet_tiller",
             properties -> new HoeItem(ModToolTiers.PINK_GARNET,0,-2.2f,properties));
 
-public static final DeferredItem<Item> GARNET_IMPALER = ITEMS.registerItem("garnet_impaler",
-            properties -> new Item(properties.spear(ModToolTiers.PINK_GARNET,1f,-2.2f,0.5f,
-                    3.1f,14f,8.7f,5.7f,14f,14f)));
+    public static final Supplier<Item> GARNET_SCYTHE = ITEMS.register("garnet_scythe", () -> new ScytheItem(new Item.Properties()
+                    .sword(ModToolTiers.PINK_GARNET, 5, -3.0f)
+                    .durability(1500)
+            )
+    );
+
+
+//public static final DeferredItem<Item> GARNET_IMPALER = ITEMS.registerItem("garnet_impaler",
+           // properties -> new Item(properties.spear(ModToolTiers.PINK_GARNET,1f,-2.2f,0.5f,
+                //    3.1f,14f,8.7f,5.7f,14f,14f)));
 
 
 public static final DeferredItem<Item> STARLIGHT_ASHES = ITEMS.registerItem("starlight_ashes",
