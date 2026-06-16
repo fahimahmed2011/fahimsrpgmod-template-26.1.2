@@ -54,6 +54,10 @@ public class ModModelprovider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.AZURITE_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.AZURITE_BOOTS.get(), ModelTemplates.FLAT_ITEM);
 
+        //ONYX
+        blockModels.createTrivialCube(ModBlocks.ONYX_ORE.get());
+
+
         itemModels.generateBow(ModItems.CRUDE_BOW.get());
 
 
