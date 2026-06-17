@@ -26,12 +26,15 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_PINK_GARNET = ITEMS.registerSimpleItem("raw_pink_garnet");
     public static final DeferredItem<Item> PINK_GARNET = ITEMS.registerSimpleItem("pink_garnet");
 
+    public static final DeferredItem<Item> RAW_ONYX = ITEMS.registerSimpleItem("raw_onyx");
+
+    public static final DeferredItem<Item> SOLAR_SHARD = ITEMS.registerSimpleItem("solar_shard");
+
+
    public static final DeferredItem<Item> METAL_DETECTOR = ITEMS.registerItem("metal_detector",
            properties -> new MetalDectectorItem(properties.durability(100)));
-
    public static final DeferredItem<Item> CHISEL_ITEM = ITEMS.registerItem("chisel_item",
            properties -> new ChiselItem(properties.durability(100)));
-
     public static final DeferredItem<Item> CRUDE_BOW = ITEMS.registerItem("crude_bow",
             properties -> new CrudeBowItem(properties.durability(500)));
 

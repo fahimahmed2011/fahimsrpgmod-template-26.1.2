@@ -56,6 +56,20 @@ public class ModModelprovider extends ModelProvider {
 
         //ONYX
         blockModels.createTrivialCube(ModBlocks.ONYX_ORE.get());
+        itemModels.generateFlatItem(ModItems.RAW_ONYX.get(), ModelTemplates.FLAT_ITEM);
+        blockModels.createTrivialCube(ModBlocks.RAW_ONYX_BLOCK.get());
+        blockModels.createTrivialCube(ModBlocks.ONYX_BLOCK.get());
+        blockModels.createTrivialCube(ModBlocks.POLISHED_ONYX_BLOCK.get());
+
+        //Shadowite
+        blockModels.createTrivialCube(ModBlocks.SHADOWITE.get());
+
+
+        //SUNSTONE
+        blockModels.createTrivialCube(ModBlocks.SUNSTONE.get());
+        itemModels.generateFlatItem(ModItems.SOLAR_SHARD.get(), ModelTemplates.FLAT_ITEM);
+
+
 
 
         itemModels.generateBow(ModItems.CRUDE_BOW.get());
@@ -63,10 +77,9 @@ public class ModModelprovider extends ModelProvider {
 
 
         /* BLOCKS*/
-       // blockModels.createTrivialCube(ModBlocks.PINK_GARNET_BLOCK.get());
+
         blockModels.createTrivialCube(ModBlocks.PINK_GARNET_ORE.get());
         blockModels.createTrivialCube(ModBlocks.PINK_GARNET_DEEPSLATE_ORE.get());
-        //blockModels.createTrivialCube(ModBlocks.AZURITE_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.RAW_PINK_GARNET_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.AZURITE_DEEPSLATE_ORE.get());
         blockModels.createTrivialCube(ModBlocks.AZURITE_ORE.get());

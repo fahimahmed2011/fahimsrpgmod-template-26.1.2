@@ -120,6 +120,28 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final Supplier<CreativeModeTab> ONYX_BLOCKS_TAB = CREATIVE_MODE_TABS.register("onyx_blocks_tab",
+            ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModBlocks.ONYX_BLOCK.get()))
+                    .title(Component.translatable("creativetab.fahimsrpgmod.onyx_blocks"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(ModBlocks.ONYX_BLOCK);
+                        output.accept(ModBlocks.RAW_ONYX_BLOCK);
+                        output.accept(ModBlocks.ONYX_ORE);
+                        output.accept(ModBlocks.POLISHED_ONYX_BLOCK);
+
+
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> ONYX_ITEMS_TAB = CREATIVE_MODE_TABS.register("onyx_blocks_tab",
+            ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModItems.RAW_ONYX.get()))
+                    .title(Component.translatable("creativetab.fahimsrpgmod.onyx_item"))
+                    .displayItems((parameters, output) -> {
+
+
+                    }).build());
+
+
+
 
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);
