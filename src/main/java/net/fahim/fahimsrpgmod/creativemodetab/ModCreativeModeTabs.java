@@ -132,10 +132,34 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
-    public static final Supplier<CreativeModeTab> ONYX_ITEMS_TAB = CREATIVE_MODE_TABS.register("onyx_blocks_tab",
+    public static final Supplier<CreativeModeTab> ONYX_ITEMS_TAB = CREATIVE_MODE_TABS.register("onyx_items_tab",
             ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModItems.RAW_ONYX.get()))
-                    .title(Component.translatable("creativetab.fahimsrpgmod.onyx_item"))
+                    .title(Component.translatable("creativetab.fahimsrpgmod.onyx_items"))
                     .displayItems((parameters, output) -> {
+
+                        output.accept(ModItems.SHADOWITE_SHARD);
+
+
+                    }).build());
+
+
+    public static final Supplier<CreativeModeTab> SOLAR_ITEMS = CREATIVE_MODE_TABS.register("solar_items",
+            ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModItems.RAW_ONYX.get()))
+                    .title(Component.translatable("creativetab.fahimsrpgmod.solar_items"))
+                    .displayItems((parameters, output) -> {
+
+                        output.accept(ModItems.SOLAR_SHARD);
+
+
+                    }).build());
+
+
+    public static final Supplier<CreativeModeTab> SUN_DIMENSION = CREATIVE_MODE_TABS.register("sun_dimension",
+            ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModItems.RAW_ONYX.get()))
+                    .title(Component.translatable("creativetab.fahimsrpgmod.sun_stone_items"))
+                    .displayItems((parameters, output) -> {
+
+                        output.accept(ModBlocks.SUNSTONE);
 
 
                     }).build());

@@ -6,7 +6,6 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
@@ -21,47 +20,55 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import java.util.Set;
 
 public class ModBlockLootTableProvider extends BlockLootSubProvider {
-    public ModBlockLootTableProvider( HolderLookup.Provider registries) {
+    public ModBlockLootTableProvider(HolderLookup.Provider registries) {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
     }
 
     @Override
     protected void generate() {
+        // Azurite
         dropSelf(ModBlocks.AZURITE_BLOCK.get());
         dropSelf(ModBlocks.RAW_AZURITE_BLOCK.get());
+        dropSelf(ModBlocks.AZURITE_STAIRS.get());
+        add(ModBlocks.AZURITE_SLAB.get(), this::createSlabItemTable);
+        add(ModBlocks.AZURITE_ORE.get(),
+                createOreDrop(ModBlocks.AZURITE_ORE.get(), ModItems.RAW_AZURITE.get()));
+        add(ModBlocks.AZURITE_DEEPSLATE_ORE.get(),
+                createMultipleOreDrops(ModBlocks.AZURITE_DEEPSLATE_ORE.get(), ModItems.RAW_AZURITE.get(), 4, 5));
+        add(ModBlocks.AZURITE_NETHER_ORE.get(),
+                createMultipleOreDrops(ModBlocks.AZURITE_NETHER_ORE.get(), ModItems.RAW_AZURITE.get(), 4, 7));
+        add(ModBlocks.AZURITE_END_ORE.get(),
+                createMultipleOreDrops(ModBlocks.AZURITE_END_ORE.get(), ModItems.RAW_AZURITE.get(), 4, 7));
+
+        // Pink Garnet
         dropSelf(ModBlocks.PINK_GARNET_BLOCK.get());
         dropSelf(ModBlocks.RAW_PINK_GARNET_BLOCK.get());
-        dropSelf(ModBlocks.MAGIC_BLOCK.get());
-        dropSelf(ModBlocks.AZURITE_STAIRS.get());
         dropSelf(ModBlocks.PINK_GARNET_STAIRS.get());
-        add(ModBlocks.AZURITE_SLAB.get(),this:: createSlabItemTable);
-        add(ModBlocks.PINK_GARNET_SLAB.get(),this:: createSlabItemTable);
-
-        add(ModBlocks.AZURITE_ORE.get(),
-                createOreDrop(ModBlocks.AZURITE_ORE.get(),ModItems.RAW_AZURITE.get()));
-
-
-        add(ModBlocks.AZURITE_NETHER_ORE.get(),
-        createMultipleOreDrops(ModBlocks.AZURITE_NETHER_ORE.get(),ModItems.RAW_AZURITE.get(),4,7));
-
-        add(ModBlocks.AZURITE_END_ORE.get(),
-        createMultipleOreDrops(ModBlocks.AZURITE_END_ORE.get(),ModItems.RAW_AZURITE.get(),4,7));
-
+        add(ModBlocks.PINK_GARNET_SLAB.get(), this::createSlabItemTable);
         add(ModBlocks.PINK_GARNET_ORE.get(),
-                createMultipleOreDrops(ModBlocks.PINK_GARNET_ORE.get(),ModItems.RAW_PINK_GARNET.get(),4,5));
-
-        add(ModBlocks.PINK_GARNET_NETHER_ORE.get(),
-                createMultipleOreDrops(ModBlocks.PINK_GARNET_ORE.get(),ModItems.RAW_PINK_GARNET.get(),4,5));
-
-        add(ModBlocks.PINK_GARNET_END_ORE.get(),
-                createMultipleOreDrops(ModBlocks.PINK_GARNET_ORE.get(),ModItems.RAW_PINK_GARNET.get(),4,5));
-
-        add(ModBlocks.AZURITE_DEEPSLATE_ORE.get(),
-                createMultipleOreDrops(ModBlocks.AZURITE_DEEPSLATE_ORE.get(),ModItems.RAW_AZURITE.get(),4,5));
-
+                createMultipleOreDrops(ModBlocks.PINK_GARNET_ORE.get(), ModItems.RAW_PINK_GARNET.get(), 4, 5));
         add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE.get(),
-                createMultipleOreDrops(ModBlocks.PINK_GARNET_DEEPSLATE_ORE.get(),ModItems.RAW_PINK_GARNET.get(),4,5));
+                createMultipleOreDrops(ModBlocks.PINK_GARNET_DEEPSLATE_ORE.get(), ModItems.RAW_PINK_GARNET.get(), 4, 5));
+        add(ModBlocks.PINK_GARNET_NETHER_ORE.get(),
+                createMultipleOreDrops(ModBlocks.PINK_GARNET_NETHER_ORE.get(), ModItems.RAW_PINK_GARNET.get(), 4, 5));
+        add(ModBlocks.PINK_GARNET_END_ORE.get(),
+                createMultipleOreDrops(ModBlocks.PINK_GARNET_END_ORE.get(), ModItems.RAW_PINK_GARNET.get(), 4, 5));
+
+        // Onyx
+        dropSelf(ModBlocks.ONYX_BLOCK.get());
+        dropSelf(ModBlocks.POLISHED_ONYX_BLOCK.get());
+        dropSelf(ModBlocks.RAW_ONYX_BLOCK.get());
+        add(ModBlocks.ONYX_ORE.get(),
+                createMultipleOreDrops(ModBlocks.ONYX_ORE.get(), ModItems.RAW_ONYX.get(), 2, 5));
+
+        // Misc blocks
+        dropSelf(ModBlocks.SHADOWITE.get());
+        dropSelf(ModBlocks.SUNSTONE.get());
+        dropSelf(ModBlocks.FROSTITE.get());
+        dropSelf(ModBlocks.VOID_STONE.get());
+        dropSelf(ModBlocks.MAGIC_BLOCK.get());
     }
+
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrops, float maxDrops) {
         HolderLookup.RegistryLookup<Enchantment> enchantments = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createSilkTouchDispatchTable(block, this.applyExplosionDecay(block,
@@ -69,7 +76,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
                         .apply(ApplyBonusCount.addOreBonusCount(enchantments.getOrThrow(Enchantments.FORTUNE)))));
     }
-
 
     @Override
     protected Iterable<Block> getKnownBlocks() {

@@ -3,13 +3,16 @@
   "item.fahimsrpgmod.raw_azurite": "Raw Azurite",
   "item.fahimsrpgmod.raw_pink_garnet": "Raw Pink Garnet",
   "item.fahimsrpgmod.pink_garnet": "Pink Garnet",
-  "item.fahimsrpgmod.metal_detector.no_valuables": "No Valueables Found!!",
+  "item.fahimsrpgmod.metal_detector.no_valuables": "No Valuables Found!!",
   "item.fahimsrpgmod.metal_detector": "Metal Detector",
   "item.fahimsrpgmod.chisel_item": "Chisel",
   "item.fahimsrpgmod.onion": "Onion",
   "item.fahimsrpgmod.end_fire": "End Fire",
-  "item.fahimsrpgmod.starlight_ashes": "End Fire",
+  "item.fahimsrpgmod.starlight_ashes": "Starlight Ashes",
   "item.fahimsrpgmod.crude_bow": "Crude Bow",
+  "item.fahimsrpgmod.raw_onyx": "Raw Onyx",
+  "item.fahimsrpgmod.solar_shard": "Solar Shard",
+  "item.fahimsrpgmod.shadowite_shard": "Shadowite Shard",
 
   "item.fahimsrpgmod.azurite_sword": "Azurite Sword",
   "item.fahimsrpgmod.azurite_pickaxe": "Azurite Pickaxe",
@@ -20,10 +23,10 @@
 
   "item.fahimsrpgmod.garnets_wrath": "Garnet's Wrath",
   "item.fahimsrpgmod.garnet_cleaver": "Garnet Cleaver",
-  "item.fahimsrpgmod.garnet_crusher": "Garnet Crusher",
+  "item.fahimsrpgmod.garnet_pickaxe": "Garnet Pickaxe",
   "item.fahimsrpgmod.garnet_delver": "Garnet Delver",
   "item.fahimsrpgmod.garnet_tiller": "Garnet Tiller",
-  "item.fahimsrpgmod.garnet_impaler": "Garnet Impaler",
+  "item.fahimsrpgmod.garnet_scythe": "Garnet Scythe",
 
   "item.fahimsrpgmod.pink_garnet_helmet": "Pink Garnet Helmet",
   "item.fahimsrpgmod.pink_garnet_chestplate": "Pink Garnet Chestplate",
@@ -36,22 +39,31 @@
   "item.fahimsrpgmod.azurite_boots": "Azurite Boots",
 
   "block.fahimsrpgmod.azurite_block": "Block of Azurite",
-  "block.fahimsrpgmod.raw_pink_garnet": "Raw Pink Garnet",
-  "block.fahimsrpgmod.raw_pink_garne_block": "Raw Pink Garnet block",
+  "block.fahimsrpgmod.raw_azurite_block": "Raw Azurite Block",
+  "block.fahimsrpgmod.raw_pink_garnet_block": "Raw Pink Garnet Block",
   "block.fahimsrpgmod.pink_garnet_block": "Pink Garnet Block",
   "block.fahimsrpgmod.pink_garnet_ore": "Pink Garnet Ore",
   "block.fahimsrpgmod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
+  "block.fahimsrpgmod.pink_garnet_nether_ore": "Pink Garnet Nether Ore",
+  "block.fahimsrpgmod.pink_garnet_end_ore": "Pink Garnet End Ore",
   "block.fahimsrpgmod.azurite_ore": "Azurite Ore",
   "block.fahimsrpgmod.azurite_deepslate_ore": "Azurite Deepslate Ore",
-  "block.fahimsrpgmod.azurite_end_ore": "Azurite end Ore",
+  "block.fahimsrpgmod.azurite_end_ore": "Azurite End Ore",
   "block.fahimsrpgmod.azurite_nether_ore": "Azurite Nether Ore",
+  "block.fahimsrpgmod.onyx_ore": "Onyx Ore",
+  "block.fahimsrpgmod.raw_onyx_block": "Raw Onyx Block",
+  "block.fahimsrpgmod.onyx_block": "Onyx Block",
+  "block.fahimsrpgmod.polished_onyx_block": "Polished Onyx Block",
+  "block.fahimsrpgmod.shadowite": "Shadowite",
+  "block.fahimsrpgmod.sunstone": "Sunstone",
+  "block.fahimsrpgmod.frostite": "Frostite",
+  "block.fahimsrpgmod.void_stone": "Void Stone",
+  "block.fahimsrpgmod.magic_block": "Magic Block",
 
   "block.fahimsrpgmod.azurite_stairs": "Azurite Stairs",
-  "block.fahimsrpgmod.azurite_slab": "Azurite slab",
-
+  "block.fahimsrpgmod.azurite_slab": "Azurite Slab",
   "block.fahimsrpgmod.pink_garnet_slab": "Pink Garnet Slab",
   "block.fahimsrpgmod.pink_garnet_stairs": "Pink Garnet Stairs",
-
 
   "creativetab.fahimsrpgmod.azurite_items": "Azurite Items",
   "creativetab.fahimsrpgmod.azurite_blocks": "Azurite Blocks",
@@ -65,7 +77,8 @@
   "tooltip.fahimsrpgmod.metal_detector.shift_down": "Click on Block and find out",
   "tooltip.fahimsrpgmod.metal_detector": "Press §eShift§r  for more info",
   "creativetab.fahimsrpgmod.onyx_blocks": "Onyx Blocks Tab",
-  "creativetab.fahimsrpgmod.onyx_item": "Onyx Items"
-
-
+  "creativetab.fahimsrpgmod.onyx_item": "Onyx Items",
+  "creativetab.fahimsrpgmod.sun_stone_items": "Sun Stone Items",
+  "creativetab.fahimsrpgmod.solar_items": "Solar Items",
+  "creativetab.fahimsrpgmod.onyx_items": "Onyx Items"
 }

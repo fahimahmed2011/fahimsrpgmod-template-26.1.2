@@ -52,6 +52,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.NEEDS_AZURITE_TOOL)
                 .add(ModBlocks.MAGIC_BLOCK.get())
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
         tag(ModTags.Blocks.INCORRECT_FOR_AZURITE_TOOL)
                 .addTags(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .remove(ModTags.Blocks.NEEDS_AZURITE_TOOL);

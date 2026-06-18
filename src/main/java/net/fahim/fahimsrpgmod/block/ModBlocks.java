@@ -54,10 +54,10 @@ public static final DeferredBlock<Block> AZURITE_DEEPSLATE_ORE =  registerblock(
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final DeferredBlock<Block> PINK_GARNET_ORE =  registerblock("pink_garnet_ore",
-            properties -> new Block(properties.strength(6f)
+            properties ->  new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(3.0f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final DeferredBlock<Block> PINK_GARNET_DEEPSLATE_ORE =  registerblock("pink_garnet_deepslate_ore",
-            properties -> new Block(properties.strength(6f)
+            properties ->  new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(3.0f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final DeferredBlock<Block> PINK_GARNET_NETHER_ORE =  registerblock("pink_garnet_nether_ore",
             properties -> new DropExperienceBlock(UniformInt.of(2,4),properties.strength(4f)
@@ -70,7 +70,7 @@ public static final DeferredBlock<Block> AZURITE_DEEPSLATE_ORE =  registerblock(
 
     public static final DeferredBlock<Block> ONYX_ORE = registerblock("onyx_ore",
             properties -> new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(3.0f)
-                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final DeferredBlock<Block> RAW_ONYX_BLOCK = registerblock("raw_onyx_block",
             properties -> new Block(properties.strength(5.0f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -108,7 +108,7 @@ properties -> new Block(properties.strength(6f)
     public static final DeferredBlock<Block> AZURITE_STAIRS = registerblock("azurite_stairs",
             properties -> new StairBlock(ModBlocks.AZURITE_BLOCK.get().defaultBlockState(),properties.strength(2f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
- public static final DeferredBlock<Block> AZURITE_SLAB = registerblock("azurite-slab",
+ public static final DeferredBlock<Block> AZURITE_SLAB = registerblock("azurite_slab",
             properties -> new SlabBlock(properties.strength(2f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
