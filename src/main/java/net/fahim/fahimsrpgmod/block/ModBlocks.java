@@ -1,6 +1,7 @@
 package net.fahim.fahimsrpgmod.block;
 
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
+import net.fahim.fahimsrpgmod.block.custom.CauliflowerCropBlock;
 import net.fahim.fahimsrpgmod.block.custom.MagicBlock;
 import net.fahim.fahimsrpgmod.item.ModItems;
 import net.minecraft.network.chat.Component;
@@ -17,6 +18,7 @@ import net.minecraft.world.level.pathfinder.PathType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -122,10 +124,11 @@ properties -> new Block(properties.strength(6f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
     public static final DeferredBlock<Block> CAULIFLOWER_CROP = registerblock("cauliflower_crop",
-            properties -> new CauliflowerCropBlock(properties.noCollission().randomTicks()
-                    .instabreak().sound(SoundType.CROP)
-                    .pathType(PathType.CROP)));
-
+            properties -> new CauliflowerCropBlock(properties
+                    .noCollision()
+                    .randomTicks()
+                    .instabreak()
+                    .sound(SoundType.CROP)));
 
 
 

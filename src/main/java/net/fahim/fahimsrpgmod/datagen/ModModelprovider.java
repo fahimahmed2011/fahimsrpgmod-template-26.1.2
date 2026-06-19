@@ -8,6 +8,7 @@ import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.CropBlock;
 
 public class ModModelprovider extends ModelProvider {
     public ModModelprovider(PackOutput output) {
@@ -28,15 +29,18 @@ public class ModModelprovider extends ModelProvider {
         //Food
         itemModels.generateFlatItem(ModItems.ONION.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CAULIFLOWER.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.CAULIFLOWER_SEEDS.get(), ModelTemplates.FLAT_ITEM);
+        blockModels.createCropBlock(ModBlocks.CAULIFLOWER_CROP.get(), CropBlock.AGE,
+                0, 1, 2, 3);
 
-
-        // Garnet tools
+        //Garnet
         itemModels.generateFlatItem(ModItems.GARNETS_WRATH.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.GARNET_CLEAVER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.GARNET_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.GARNET_DELVER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.GARNET_TILLER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.GARNET_SCYTHE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
 
         // Azurite tools
         itemModels.generateFlatItem(ModItems.AZURITE_SPEAR.get(), ModelTemplates.FLAT_HANDHELD_ITEM);

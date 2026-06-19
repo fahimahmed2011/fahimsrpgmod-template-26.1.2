@@ -1,6 +1,7 @@
 package net.fahim.fahimsrpgmod.item;
 
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
+import net.fahim.fahimsrpgmod.block.ModBlocks;
 import net.fahim.fahimsrpgmod.food.ModFoods;
 import net.fahim.fahimsrpgmod.item.custom.*;
 import net.fahim.fahimsrpgmod.item.custom.ScytheItem;
@@ -23,7 +24,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> CAULIFLOWER = ITEMS.registerItem("cauliflower",
             properties -> new Item(properties.food(ModFoods.CAULIFLOWER, ModFoods.CAULIFLOWER_CONSUMABLE)));
-    public static final DeferredItem<Item> CAULIFLOWER_SEEDS = ITEMS.registerSimpleItem("cauliflower_seeds");
+
+    public static final DeferredItem<Item> CAULIFLOWER_SEEDS = ITEMS.registerItem("cauliflower_seeds",
+            properties -> new BlockItem(ModBlocks.CAULIFLOWER_CROP.get(), properties));
 
     public static final DeferredItem<Item> AZURITE = ITEMS.registerSimpleItem("azurite");
     public static final DeferredItem<Item> RAW_AZURITE = ITEMS.registerSimpleItem("raw_azurite");

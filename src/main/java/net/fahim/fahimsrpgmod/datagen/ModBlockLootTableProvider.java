@@ -2,6 +2,7 @@ package net.fahim.fahimsrpgmod.datagen;
 
 import net.fahim.fahimsrpgmod.block.ModBlocks;
 import net.fahim.fahimsrpgmod.item.ModItems;
+import net.minecraft.advancements.criterion.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -11,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
@@ -67,6 +69,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.FROSTITE.get());
         dropSelf(ModBlocks.VOID_STONE.get());
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
+
+        add(ModBlocks.CAULIFLOWER_CROP.get(), createCropDrops(ModBlocks.CAULIFLOWER_CROP.get(),
+                ModItems.CAULIFLOWER.get(), ModItems.CAULIFLOWER_SEEDS.get(),
+                net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(ModBlocks.CAULIFLOWER_CROP.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties()
+                                .hasProperty(CropBlock.AGE, 3))));
+
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrops, float maxDrops) {
