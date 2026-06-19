@@ -2,6 +2,7 @@ package net.fahim.fahimsrpgmod.datagen;
 
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
 import net.fahim.fahimsrpgmod.block.ModBlocks;
+import net.fahim.fahimsrpgmod.block.custom.CauliflowerCropBlock;
 import net.fahim.fahimsrpgmod.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -30,8 +31,10 @@ public class ModModelprovider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.ONION.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CAULIFLOWER.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CAULIFLOWER_SEEDS.get(), ModelTemplates.FLAT_ITEM);
-        blockModels.createCropBlock(ModBlocks.CAULIFLOWER_CROP.get(), CropBlock.AGE,
-                0, 1, 2, 3);
+        blockModels.createCropBlock(
+                ModBlocks.CAULIFLOWER_CROP.get(),
+                CauliflowerCropBlock.AGE,
+                0, 1, 2, 3, 4, 5, 6);
 
         //Garnet
         itemModels.generateFlatItem(ModItems.GARNETS_WRATH.get(), ModelTemplates.FLAT_HANDHELD_ITEM);

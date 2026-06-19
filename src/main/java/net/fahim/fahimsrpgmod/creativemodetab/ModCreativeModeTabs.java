@@ -93,6 +93,7 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.ONION);
                         output.accept(ModItems.CAULIFLOWER);
+                        output.accept(ModItems.CAULIFLOWER_SEEDS);
 
                     }).build());
 

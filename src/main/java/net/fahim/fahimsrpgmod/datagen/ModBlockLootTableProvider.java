@@ -75,7 +75,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition
                         .hasBlockStateProperties(ModBlocks.CAULIFLOWER_CROP.get())
                         .setProperties(StatePropertiesPredicate.Builder.properties()
-                                .hasProperty(CropBlock.AGE, 3))));
+                                .hasProperty(CropBlock.AGE, 6))));
 
     }
 
