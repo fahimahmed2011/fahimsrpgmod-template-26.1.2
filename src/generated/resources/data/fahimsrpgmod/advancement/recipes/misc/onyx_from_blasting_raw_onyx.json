@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_azurite_block": {
+    "has_raw_onyx": {
       "conditions": {
         "items": [
           {
-            "items": "fahimsrpgmod:azurite_block"
+            "items": "fahimsrpgmod:raw_onyx"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fahimsrpgmod:azurite-slab"
+        "recipe": "fahimsrpgmod:onyx_from_blasting_raw_onyx"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_azurite_block"
+      "has_raw_onyx"
     ]
   ],
   "rewards": {
     "recipes": [
-      "fahimsrpgmod:azurite-slab"
+      "fahimsrpgmod:onyx_from_blasting_raw_onyx"
     ]
   }
 }

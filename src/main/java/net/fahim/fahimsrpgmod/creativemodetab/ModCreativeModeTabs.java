@@ -92,6 +92,7 @@ public class ModCreativeModeTabs {
                     .withTabsAfter(Identifier.fromNamespaceAndPath(FahimsRPGMod.MOD_ID,"pink_garnet_items_tab"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.ONION);
+                        output.accept(ModItems.CAULIFLOWER);
 
                     }).build());
 

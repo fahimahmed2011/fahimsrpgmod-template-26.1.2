@@ -34,7 +34,11 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.AZURITE_STAIRS.get())
                 .add(ModBlocks.AZURITE_SLAB.get())
                 .add(ModBlocks.PINK_GARNET_STAIRS.get())
-                .add(ModBlocks.PINK_GARNET_SLAB.get());
+                .add(ModBlocks.PINK_GARNET_SLAB.get())
+                .add(ModBlocks.ONYX_ORE.get())
+                .add(ModBlocks.RAW_ONYX_BLOCK.get())
+                .add(ModBlocks.ONYX_BLOCK.get())
+                .add(ModBlocks.POLISHED_ONYX_BLOCK.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.AZURITE_ORE.get())
@@ -59,12 +63,17 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
         tag(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
                 .add(ModBlocks.MAGIC_BLOCK.get())
+                .add(ModBlocks.ONYX_ORE.get())
+                .add(ModBlocks.RAW_ONYX_BLOCK.get())
+                .add(ModBlocks.ONYX_BLOCK.get())
+                .add(ModBlocks.POLISHED_ONYX_BLOCK.get())
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .addTag(ModTags.Blocks.NEEDS_AZURITE_TOOL);
 
         tag(ModTags.Blocks.INCORRECT_FOR_PINK_GARNET_TOOL)
                 .addTags(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .remove(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL);
+
 
     }
 }

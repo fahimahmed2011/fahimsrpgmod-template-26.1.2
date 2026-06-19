@@ -12,8 +12,12 @@
     "fahimsrpgmod:pink_garnet_deepslate_ore",
     "fahimsrpgmod:magic_block",
     "fahimsrpgmod:azurite_stairs",
-    "fahimsrpgmod:azurite-slab",
+    "fahimsrpgmod:azurite_slab",
     "fahimsrpgmod:pink_garnet_stairs",
-    "fahimsrpgmod:pink_garnet_slab"
+    "fahimsrpgmod:pink_garnet_slab",
+    "fahimsrpgmod:onyx_ore",
+    "fahimsrpgmod:raw_onyx_block",
+    "fahimsrpgmod:onyx_block",
+    "fahimsrpgmod:polished_onyx_block"
   ]
 }

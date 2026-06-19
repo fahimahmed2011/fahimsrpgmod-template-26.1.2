@@ -13,6 +13,7 @@ import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.enchantment.EnchantmentInstance;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.pathfinder.PathType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -69,16 +70,16 @@ public static final DeferredBlock<Block> AZURITE_DEEPSLATE_ORE =  registerblock(
 
 
     public static final DeferredBlock<Block> ONYX_ORE = registerblock("onyx_ore",
-            properties -> new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(3.0f)
+            properties -> new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(21.3f, 1200f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final DeferredBlock<Block> RAW_ONYX_BLOCK = registerblock("raw_onyx_block",
-            properties -> new Block(properties.strength(5.0f)
+            properties -> new Block(properties.strength(6.0f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> ONYX_BLOCK = registerblock("onyx_block",
-            properties -> new Block(properties.strength(5.0f)
+            properties -> new Block(properties.strength(10.0f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> POLISHED_ONYX_BLOCK = registerblock("polished_onyx_block",
-            properties -> new Block(properties.strength(5.0f)
+            properties -> new Block(properties.strength(15.0f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
@@ -119,6 +120,11 @@ properties -> new Block(properties.strength(6f)
     public static final DeferredBlock<Block> PINK_GARNET_STAIRS = registerblock("pink_garnet_stairs",
             properties -> new StairBlock(ModBlocks.PINK_GARNET_BLOCK.get().defaultBlockState(),properties.strength(2f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> CAULIFLOWER_CROP = registerblock("cauliflower_crop",
+            properties -> new CauliflowerCropBlock(properties.noCollission().randomTicks()
+                    .instabreak().sound(SoundType.CROP)
+                    .pathType(PathType.CROP)));
 
 
 

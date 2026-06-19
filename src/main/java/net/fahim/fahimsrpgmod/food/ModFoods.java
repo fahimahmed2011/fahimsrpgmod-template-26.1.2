@@ -13,5 +13,11 @@ public class ModFoods {
     public static final Consumable ONION_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2.1f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.NAUSEA, 400), 0.10f)).build();
 
+    public static FoodProperties CAULIFLOWER = new FoodProperties.Builder().nutrition(6).saturationModifier(0.8f).build();
+
+    public static final Consumable CAULIFLOWER_CONSUMABLE = Consumables.defaultFood()
+            .consumeSeconds(2.1f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.REGENERATION, 100), 1.0f)).build();
+
+
 }
 

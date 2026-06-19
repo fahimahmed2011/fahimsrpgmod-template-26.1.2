@@ -1,6 +1,10 @@
 {
   "values": [
     "fahimsrpgmod:magic_block",
+    "fahimsrpgmod:onyx_ore",
+    "fahimsrpgmod:raw_onyx_block",
+    "fahimsrpgmod:onyx_block",
+    "fahimsrpgmod:polished_onyx_block",
     "#minecraft:needs_diamond_tool",
     "#fahimsrpgmod:needs_azurite_tool"
   ]

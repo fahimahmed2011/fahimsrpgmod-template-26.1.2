@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "fahimsrpgmod:pink_garnet_nether_ore"
+              "name": "fahimsrpgmod:onyx_ore"
             },
             {
               "type": "minecraft:item",
@@ -36,7 +36,7 @@
                   "count": {
                     "type": "minecraft:uniform",
                     "max": 5.0,
-                    "min": 4.0
+                    "min": 2.0
                   },
                   "function": "minecraft:set_count"
                 },
@@ -49,7 +49,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "fahimsrpgmod:raw_pink_garnet"
+              "name": "fahimsrpgmod:raw_onyx"
             }
           ]
         }
@@ -57,5 +57,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "fahimsrpgmod:blocks/pink_garnet_nether_ore"
+  "random_sequence": "fahimsrpgmod:blocks/onyx_ore"
 }

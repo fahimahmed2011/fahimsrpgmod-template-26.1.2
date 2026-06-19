@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "fahimsrpgmod:azurite-slab",
+                  "block": "fahimsrpgmod:azurite_slab",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double"
@@ -25,11 +25,11 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "fahimsrpgmod:azurite-slab"
+          "name": "fahimsrpgmod:azurite_slab"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "fahimsrpgmod:blocks/azurite-slab"
+  "random_sequence": "fahimsrpgmod:blocks/azurite_slab"
 }

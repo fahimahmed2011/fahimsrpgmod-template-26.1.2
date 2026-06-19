@@ -23,9 +23,12 @@ public class ModModelprovider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.PINK_GARNET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.METAL_DETECTOR.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CHISEL_ITEM.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.ONION.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.END_FIRE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.STARLIGHT_ASHES.get(), ModelTemplates.FLAT_ITEM);
+        //Food
+        itemModels.generateFlatItem(ModItems.ONION.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.CAULIFLOWER.get(), ModelTemplates.FLAT_ITEM);
+
 
         // Garnet tools
         itemModels.generateFlatItem(ModItems.GARNETS_WRATH.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -61,6 +64,7 @@ public class ModModelprovider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.RAW_ONYX_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.ONYX_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.POLISHED_ONYX_BLOCK.get());
+        itemModels.generateFlatItem(ModItems.ONYX.get(), ModelTemplates.FLAT_ITEM);
 
         // Shadowite
         blockModels.createTrivialCube(ModBlocks.SHADOWITE.get());

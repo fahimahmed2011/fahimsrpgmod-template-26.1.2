@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "fahimsrpgmod:block/azurite-slab"
+      "model": "fahimsrpgmod:block/azurite_slab"
     },
     "type=double": {
       "model": "fahimsrpgmod:block/azurite_block"
     },
     "type=top": {
-      "model": "fahimsrpgmod:block/azurite-slab_top"
+      "model": "fahimsrpgmod:block/azurite_slab_top"
     }
   }
 }

@@ -1,14 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "onyx",
   "key": {
-    "#": "fahimsrpgmod:azurite_block"
+    "O": "fahimsrpgmod:onyx"
   },
   "pattern": [
-    "###"
+    "OOO",
+    "OOO",
+    "OOO"
   ],
   "result": {
-    "count": 6,
-    "id": "fahimsrpgmod:azurite-slab"
+    "id": "fahimsrpgmod:onyx_block"
   }
 }

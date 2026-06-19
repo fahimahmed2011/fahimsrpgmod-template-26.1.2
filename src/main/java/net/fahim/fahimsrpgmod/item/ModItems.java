@@ -21,12 +21,17 @@ import java.util.function.Supplier;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(FahimsRPGMod.MOD_ID);
 
+    public static final DeferredItem<Item> CAULIFLOWER = ITEMS.registerItem("cauliflower",
+            properties -> new Item(properties.food(ModFoods.CAULIFLOWER, ModFoods.CAULIFLOWER_CONSUMABLE)));
+    public static final DeferredItem<Item> CAULIFLOWER_SEEDS = ITEMS.registerSimpleItem("cauliflower_seeds");
+
     public static final DeferredItem<Item> AZURITE = ITEMS.registerSimpleItem("azurite");
     public static final DeferredItem<Item> RAW_AZURITE = ITEMS.registerSimpleItem("raw_azurite");
     public static final DeferredItem<Item> RAW_PINK_GARNET = ITEMS.registerSimpleItem("raw_pink_garnet");
     public static final DeferredItem<Item> PINK_GARNET = ITEMS.registerSimpleItem("pink_garnet");
 
     public static final DeferredItem<Item> RAW_ONYX = ITEMS.registerSimpleItem("raw_onyx");
+    public static final DeferredItem<Item> ONYX = ITEMS.registerSimpleItem("onyx");
 
     public static final DeferredItem<Item> SOLAR_SHARD = ITEMS.registerSimpleItem("solar_shard");
 
@@ -130,7 +135,8 @@ public static final DeferredItem<Item> GARNET_DELVER = ITEMS.registerItem("garne
 public static final DeferredItem<Item> GARNET_TILLER = ITEMS.registerItem("garnet_tiller",
             properties -> new HoeItem(ModToolTiers.PINK_GARNET,0,-2.2f,properties));
 
-    public static final Supplier<Item> GARNET_SCYTHE = ITEMS.register("garnet_scythe", () -> new ScytheItem(new Item.Properties()
+    public static final DeferredItem<ScytheItem> GARNET_SCYTHE = ITEMS.registerItem("garnet_scythe",
+            properties -> new ScytheItem(properties
                     .sword(ModToolTiers.PINK_GARNET, 5, -3.0f)
                     .durability(1500)
             )

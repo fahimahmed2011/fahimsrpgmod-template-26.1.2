@@ -43,6 +43,22 @@ public class ModRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes() {
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ONYX_BLOCK.get())
+                .pattern("OOO")
+                .pattern("OOO")
+                .pattern("OOO")
+                .define('O', ModItems.ONYX.get())
+                .unlockedBy(getHasName(ModItems.ONYX.get()), has(ModItems.ONYX))
+                .group("onyx")
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ModItems.ONYX.get(), 9)
+                .requires(ModBlocks.ONYX_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.ONYX_BLOCK.get()), has(ModBlocks.ONYX_BLOCK))
+                .group("onyx")
+                .save(output);
+
         // PINK GARNET BLOCK COMPRESS / DECOMPRESS
         shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GARNET_BLOCK.get())
                 .pattern("PPP")
@@ -98,6 +114,14 @@ public class ModRecipeProvider extends RecipeProvider {
                 ModBlocks.PINK_GARNET_NETHER_ORE,
                 ModBlocks.PINK_GARNET_END_ORE
         );
+
+        List<ItemLike> ONYX_SMELTABLES = List.of(
+                ModItems.RAW_ONYX,
+                ModBlocks.ONYX_ORE
+        );
+
+        oreSmelting(ONYX_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.ONYX.get(), 0.25f, 200, "onyx");
+        oreBlasting(ONYX_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.ONYX.get(), 0.25f, 100, "onyx");
 
         oreSmelting(PINK_GARNET_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.PINK_GARNET.get(), 0.25f, 200, "pink_garnet");
         oreBlasting(PINK_GARNET_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.PINK_GARNET.get(), 0.25f, 100, "pink_garnet");
