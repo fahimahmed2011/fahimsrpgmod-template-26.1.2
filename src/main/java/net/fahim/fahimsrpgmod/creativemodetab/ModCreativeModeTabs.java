@@ -54,6 +54,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.GARNET_PICKAXE);
                         output.accept(ModItems.GARNET_TILLER);
                         output.accept(ModItems.GARNET_DELVER);
+                        output.accept(ModItems.GARNET_SCYTHE);
                        // output.accept(ModItems.GARNET_IMPALER);
 
 

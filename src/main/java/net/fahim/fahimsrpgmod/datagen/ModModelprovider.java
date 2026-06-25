@@ -36,6 +36,16 @@ public class ModModelprovider extends ModelProvider {
                 CauliflowerCropBlock.AGE,
                 0, 1, 2, 3, 4, 5, 6);
 
+        //MoonStone
+        blockModels.createTrivialCube(ModBlocks.MOON_STONE.get());
+
+        //Stone Crystal Ore
+        blockModels.createTrivialCube(ModBlocks.STONE_CRYSTAL_ORE.get());
+
+        //Mythril Ore
+        blockModels.createTrivialCube(ModBlocks.MYTHRIL_ORE.get());
+
+
         //Garnet
         itemModels.generateFlatItem(ModItems.GARNETS_WRATH.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.GARNET_CLEAVER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);

@@ -87,7 +87,22 @@ public static final DeferredBlock<Block> AZURITE_DEEPSLATE_ORE =  registerblock(
 
 
 
+
     public static final DeferredBlock<Block> SHADOWITE =  registerblock("shadowite",
+properties -> new Block(properties.strength(6f)
+                  .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+//Moon Stone
+    public static final DeferredBlock<Block> MOON_STONE =  registerblock("moon_stone",
+properties -> new Block(properties.strength(6f)
+        .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    //Stone Crystal Ore
+    public static final DeferredBlock<Block> STONE_CRYSTAL_ORE =  registerblock("stone_crystal_ore",
+properties -> new Block(properties.strength(6f)
+                  .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    //Mythril Ore
+    public static final DeferredBlock<Block> MYTHRIL_ORE =  registerblock("mythril_ore",
 properties -> new Block(properties.strength(6f)
                   .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
@@ -122,6 +137,7 @@ properties -> new Block(properties.strength(6f)
     public static final DeferredBlock<Block> PINK_GARNET_STAIRS = registerblock("pink_garnet_stairs",
             properties -> new StairBlock(ModBlocks.PINK_GARNET_BLOCK.get().defaultBlockState(),properties.strength(2f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
 
     public static final DeferredBlock<Block> CAULIFLOWER_CROP = registerblock("cauliflower_crop",
             properties -> new CauliflowerCropBlock(properties
