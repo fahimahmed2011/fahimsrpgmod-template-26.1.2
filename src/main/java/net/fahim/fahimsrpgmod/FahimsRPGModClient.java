@@ -28,39 +28,39 @@ public class FahimsRPGModClient {
     }
 
     @SubscribeEvent
-    static void onClientSetup(FMLClientSetupEvent event) {
-        event.enqueueWork(() -> {
-            Minecraft.getInstance().getWindow().setTitle("⚔ Fahim's RPG Mod ⚔");
+    static void onGuiOpen(net.neoforged.neoforge.client.event.ScreenEvent.Opening event) {
+            Minecraft mc = Minecraft.getInstance();
+        Minecraft.getInstance().getWindow().setTitle("⚔ Fahim's RPG Mod ⚔");
 
-            try {
-                InputStream iconStream = FahimsRPGModClient.class.getResourceAsStream("/assets/fahimsrpgmod/icon.png");
-                if (iconStream != null) {
-                    byte[] iconBytes = iconStream.readAllBytes();
-                    ByteBuffer iconBuffer = ByteBuffer.allocateDirect(iconBytes.length);
-                    iconBuffer.put(iconBytes);
-                    iconBuffer.flip();
+            // mc.execute() queues work on the main/render thread
+            mc.execute(() -> {
+                long windowHandle = GLFW.glfwGetCurrentContext();
+                try {
+                    InputStream iconStream = FahimsRPGModClient.class.getResourceAsStream("/assets/fahimsrpgmod/icon/icon.png");
+                    if (iconStream != null) {
+                        byte[] iconBytes = iconStream.readAllBytes();
+                        ByteBuffer iconBuffer = ByteBuffer.allocateDirect(iconBytes.length);
+                        iconBuffer.put(iconBytes);
+                        iconBuffer.flip();
 
-                    java.lang.reflect.Field handleField = Minecraft.getInstance().getWindow().getClass().getDeclaredField("handle");
-                    handleField.setAccessible(true);
-                    long windowHandle = (long) handleField.get(Minecraft.getInstance().getWindow());
-
-                    int[] w = new int[1], h = new int[1], channels = new int[1];
-                    ByteBuffer pixels = STBImage.stbi_load_from_memory(iconBuffer, w, h, channels, 4);
-                    if (pixels != null) {
-                        GLFWImage.Buffer icons = GLFWImage.malloc(1);
-                        icons.position(0).width(w[0]).height(h[0]).pixels(pixels);
-                        GLFW.glfwSetWindowIcon(windowHandle, icons);
-                        STBImage.stbi_image_free(pixels);
-                        System.out.println("Icon set successfully!");
+                        int[] w = new int[1], h = new int[1], channels = new int[1];
+                        ByteBuffer pixels = STBImage.stbi_load_from_memory(iconBuffer, w, h, channels, 4);
+                        if (pixels != null) {
+                            GLFWImage.Buffer icons = GLFWImage.malloc(1);
+                            icons.position(0).width(w[0]).height(h[0]).pixels(pixels);
+                            GLFW.glfwSetWindowIcon(windowHandle, icons);
+                            STBImage.stbi_image_free(pixels);
+                            icons.free();
+                            System.out.println("Icon set successfully!");
+                        } else {
+                            System.out.println("Failed to decode icon PNG: " + STBImage.stbi_failure_reason());
+                        }
                     } else {
-                        System.out.println("Failed to decode icon PNG");
+                        System.out.println("Icon file not found at /assets/fahimsrpgmod/icon.png");
                     }
-                } else {
-                    System.out.println("Icon file not found!");
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
+            });
+        };
     }
-}

@@ -40,6 +40,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> SHADOWITE_SHARD = ITEMS.registerSimpleItem("shadowite_shard");
 
+    public static final DeferredItem<Item> SHADOWITE_SHARD = ITEMS.registerSimpleItem("shadowite_shard");
+
 
    public static final DeferredItem<Item> METAL_DETECTOR = ITEMS.registerItem("metal_detector",
            properties -> new MetalDectectorItem(properties.durability(100)));

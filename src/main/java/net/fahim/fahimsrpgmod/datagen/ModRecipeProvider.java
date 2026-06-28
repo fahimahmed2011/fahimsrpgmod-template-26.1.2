@@ -100,7 +100,6 @@ public class ModRecipeProvider extends RecipeProvider {
         List<ItemLike> AZURITE_SMELTABLES = List.of
                 (ModItems.RAW_AZURITE,
                 ModBlocks.AZURITE_ORE,
-                ModBlocks.AZURITE_DEEPSLATE_ORE,
                 ModBlocks.AZURITE_NETHER_ORE,
                 ModBlocks.AZURITE_END_ORE);
 

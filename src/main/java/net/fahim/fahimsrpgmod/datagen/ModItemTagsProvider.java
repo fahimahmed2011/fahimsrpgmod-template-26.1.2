@@ -44,6 +44,5 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTags.AXES).add(ModItems.GARNET_CLEAVER.get());
         tag(ItemTags.SHOVELS).add(ModItems.GARNET_DELVER.get());
         tag(ItemTags.HOES).add(ModItems.GARNET_TILLER.get());
-        //tag(ItemTags.SPEARS).add(ModItems.GARNET_IMPALER.get());
     }
 }

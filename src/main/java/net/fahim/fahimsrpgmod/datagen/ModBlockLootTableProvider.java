@@ -35,8 +35,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.AZURITE_SLAB.get(), this::createSlabItemTable);
         add(ModBlocks.AZURITE_ORE.get(),
                 createOreDrop(ModBlocks.AZURITE_ORE.get(), ModItems.RAW_AZURITE.get()));
-        add(ModBlocks.AZURITE_DEEPSLATE_ORE.get(),
-                createMultipleOreDrops(ModBlocks.AZURITE_DEEPSLATE_ORE.get(), ModItems.RAW_AZURITE.get(), 4, 5));
         add(ModBlocks.AZURITE_NETHER_ORE.get(),
                 createMultipleOreDrops(ModBlocks.AZURITE_NETHER_ORE.get(), ModItems.RAW_AZURITE.get(), 4, 7));
         add(ModBlocks.AZURITE_END_ORE.get(),

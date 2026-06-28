@@ -55,12 +55,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.GARNET_TILLER);
                         output.accept(ModItems.GARNET_DELVER);
                         output.accept(ModItems.GARNET_SCYTHE);
-                       // output.accept(ModItems.GARNET_IMPALER);
-
-
-
-
-
 
                     }).build());
 
@@ -109,7 +103,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.AZURITE_BLOCK);
                         output.accept(ModBlocks.RAW_AZURITE_BLOCK);
 
-                        output.accept(ModBlocks.AZURITE_DEEPSLATE_ORE);
                         output.accept(ModBlocks.AZURITE_ORE);
                         output.accept(ModBlocks.AZURITE_END_ORE);
                         output.accept(ModBlocks.AZURITE_NETHER_ORE);

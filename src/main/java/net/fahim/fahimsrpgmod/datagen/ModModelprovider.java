@@ -99,7 +99,6 @@ public class ModModelprovider extends ModelProvider {
 
         // Azurite blocks
         blockModels.createTrivialCube(ModBlocks.AZURITE_ORE.get());
-        blockModels.createTrivialCube(ModBlocks.AZURITE_DEEPSLATE_ORE.get());
         blockModels.createTrivialCube(ModBlocks.AZURITE_NETHER_ORE.get());
         blockModels.createTrivialCube(ModBlocks.AZURITE_END_ORE.get());
         blockModels.createTrivialCube(ModBlocks.RAW_AZURITE_BLOCK.get());
@@ -110,6 +109,12 @@ public class ModModelprovider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.PINK_GARNET_NETHER_ORE.get());
         blockModels.createTrivialCube(ModBlocks.PINK_GARNET_END_ORE.get());
         blockModels.createTrivialCube(ModBlocks.RAW_PINK_GARNET_BLOCK.get());
+
+
+        blockModels.createTrivialCube(ModBlocks.STORM_QUARTZ_ORE.get());
+        blockModels.createTrivialCube(ModBlocks.STORM_QUARTZ_BLOCK.get());
+        blockModels.createTrivialCube(ModBlocks.POLISHED_STORM_QUARTZ_ORE.get());
+
 
         // Magic block
         blockModels.createTrivialCube(ModBlocks.MAGIC_BLOCK.get());

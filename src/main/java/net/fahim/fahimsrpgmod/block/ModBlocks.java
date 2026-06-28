@@ -3,6 +3,7 @@ package net.fahim.fahimsrpgmod.block;
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
 import net.fahim.fahimsrpgmod.block.custom.CauliflowerCropBlock;
 import net.fahim.fahimsrpgmod.block.custom.MagicBlock;
+import net.fahim.fahimsrpgmod.block.custom.StormQuartzOreBlock;
 import net.fahim.fahimsrpgmod.item.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.ConstantInt;
@@ -44,11 +45,20 @@ public static final DeferredBlock<Block> AZURITE_END_ORE =  registerblock("azuri
 public static final DeferredBlock<Block> AZURITE_NETHER_ORE =  registerblock("azurite_nether_ore",
         properties -> new DropExperienceBlock(UniformInt.of(2,4),properties.strength(4f)
                 .requiresCorrectToolForDrops().sound(SoundType.STONE)));
-public static final DeferredBlock<Block> AZURITE_DEEPSLATE_ORE =  registerblock("azurite_deepslate_ore",
-        properties -> new DropExperienceBlock(UniformInt.of(5,6),properties.strength(7f)
-                .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
 
+
+    public static final DeferredBlock<Block> STORM_QUARTZ_ORE = registerblock("storm_quartz_ore",
+            properties -> new StormQuartzOreBlock(properties.strength(7f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> STORM_QUARTZ_BLOCK = registerblock("storm_quartz_block",
+            properties -> new StormQuartzOreBlock(properties.strength(7f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+public static final DeferredBlock<Block> POLISHED_STORM_QUARTZ_ORE = registerblock("polished_storm_quartz_block",
+            properties -> new StormQuartzOreBlock(properties.strength(7f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
     public static final DeferredBlock<Block> PINK_GARNET_BLOCK =  registerblock("pink_garnet_block",
             properties -> new Block(properties.strength(4f)
@@ -118,6 +128,7 @@ properties -> new Block(properties.strength(6f)
     public static final DeferredBlock<Block> VOID_STONE =  registerblock("void_stone",
            properties -> new Block(properties.strength(6f)
                   .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerblock("magic_block",
             properties -> new MagicBlock(properties.strength(2f)
