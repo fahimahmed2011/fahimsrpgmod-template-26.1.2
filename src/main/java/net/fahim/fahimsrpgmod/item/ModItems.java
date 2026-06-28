@@ -22,6 +22,9 @@ import java.util.function.Supplier;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(FahimsRPGMod.MOD_ID);
 
+    //Moon
+    public static final DeferredItem<Item> MOON_SHARD = ITEMS.registerSimpleItem("moon_shard");
+
     public static final DeferredItem<Item> CAULIFLOWER = ITEMS.registerItem("cauliflower",
             properties -> new Item(properties.food(ModFoods.CAULIFLOWER, ModFoods.CAULIFLOWER_CONSUMABLE)));
 
@@ -40,7 +43,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> SHADOWITE_SHARD = ITEMS.registerSimpleItem("shadowite_shard");
 
-    public static final DeferredItem<Item> SHADOWITE_SHARD = ITEMS.registerSimpleItem("shadowite_shard");
+    public static final DeferredItem<Item> STORM_QUARTZ = ITEMS.registerSimpleItem("storm_quartz");
+
+    public static final DeferredItem<Item> RAW_STORM_QUARTZ = ITEMS.registerSimpleItem("raw_storm_quartz");
 
 
    public static final DeferredItem<Item> METAL_DETECTOR = ITEMS.registerItem("metal_detector",

@@ -161,6 +161,20 @@ public class ModCreativeModeTabs {
                     }).build());
 
 
+    public static final Supplier<CreativeModeTab> LIGHTNING_ITEMS = CREATIVE_MODE_TABS.register("lightning_items",
+            ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModItems.RAW_ONYX.get()))
+                    .title(Component.translatable("creativetab.fahimsrpgmod.lightning_items"))
+                    .displayItems((parameters, output) -> {
+
+                        output.accept(ModBlocks.POLISHED_STORM_QUARTZ_ORE);
+                        output.accept(ModBlocks.STORM_QUARTZ_ORE);
+                        output.accept(ModItems.STORM_QUARTZ);
+                        output.accept(ModItems.RAW_STORM_QUARTZ);
+
+
+                    }).build());
+
+
 
 
     public static void register(IEventBus eventBus){

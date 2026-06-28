@@ -45,6 +45,11 @@ public class ModModelprovider extends ModelProvider {
         //Mythril Ore
         blockModels.createTrivialCube(ModBlocks.MYTHRIL_ORE.get());
 
+        //Lightning Item
+        itemModels.generateFlatItem(ModItems.RAW_STORM_QUARTZ.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.STORM_QUARTZ.get(), ModelTemplates.FLAT_ITEM);
+
+
 
         //Garnet
         itemModels.generateFlatItem(ModItems.GARNETS_WRATH.get(), ModelTemplates.FLAT_HANDHELD_ITEM);

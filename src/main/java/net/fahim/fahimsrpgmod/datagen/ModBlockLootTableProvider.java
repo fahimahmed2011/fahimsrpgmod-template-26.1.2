@@ -28,6 +28,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        //Moon
+        add(ModBlocks.MOON_STONE.get(),
+                createMultipleOreDrops(ModBlocks.MOON_STONE.get(), ModItems.MOON_SHARD.get(), 1, 3));
+
+        //Lightning
+        dropSelf(ModBlocks.STORM_QUARTZ_BLOCK.get());
+        dropSelf(ModBlocks.POLISHED_STORM_QUARTZ_ORE.get());
+        add(ModBlocks.STORM_QUARTZ_ORE.get(),
+                createMultipleOreDrops(ModBlocks.STORM_QUARTZ_ORE.get(), ModItems.STORM_QUARTZ.get(), 1, 3));
+
         // Azurite
         dropSelf(ModBlocks.AZURITE_BLOCK.get());
         dropSelf(ModBlocks.RAW_AZURITE_BLOCK.get());

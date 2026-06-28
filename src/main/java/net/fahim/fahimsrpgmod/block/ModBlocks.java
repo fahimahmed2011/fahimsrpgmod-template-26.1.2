@@ -3,6 +3,7 @@ package net.fahim.fahimsrpgmod.block;
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
 import net.fahim.fahimsrpgmod.block.custom.CauliflowerCropBlock;
 import net.fahim.fahimsrpgmod.block.custom.MagicBlock;
+import net.fahim.fahimsrpgmod.block.custom.MoonStoneBlock;
 import net.fahim.fahimsrpgmod.block.custom.StormQuartzOreBlock;
 import net.fahim.fahimsrpgmod.item.ModItems;
 import net.minecraft.network.chat.Component;
@@ -94,23 +95,17 @@ public static final DeferredBlock<Block> POLISHED_STORM_QUARTZ_ORE = registerblo
             properties -> new Block(properties.strength(15.0f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
-
-
-
-
     public static final DeferredBlock<Block> SHADOWITE =  registerblock("shadowite",
 properties -> new Block(properties.strength(6f)
                   .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 //Moon Stone
     public static final DeferredBlock<Block> MOON_STONE =  registerblock("moon_stone",
-properties -> new Block(properties.strength(6f)
+properties -> new MoonStoneBlock(properties.strength(6f).randomTicks()
         .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
-
     //Stone Crystal Ore
     public static final DeferredBlock<Block> STONE_CRYSTAL_ORE =  registerblock("stone_crystal_ore",
 properties -> new Block(properties.strength(6f)
                   .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
-
     //Mythril Ore
     public static final DeferredBlock<Block> MYTHRIL_ORE =  registerblock("mythril_ore",
 properties -> new Block(properties.strength(6f)
