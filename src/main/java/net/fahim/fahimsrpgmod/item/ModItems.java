@@ -76,6 +76,11 @@ public class ModItems {
             props -> new Item(props.humanoidArmor(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorType.BOOTS))
     );
 
+    public static final DeferredItem<Item> PINK_GARNET_HORSE_ARMOUR = ITEMS.registerItem(
+            "pink_garnet_horse_armour",
+            props -> new Item(props.horseArmor(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL))
+    );
+
     //AZURITE ARMOUR
     public static final DeferredItem<Item> AZURITE_HELMET = ITEMS.registerItem(
             "azurite_helmet",
@@ -95,6 +100,11 @@ public class ModItems {
     public static final DeferredItem<Item> AZURITE_BOOTS = ITEMS.registerItem(
             "azurite_boots",
             props -> new Item(props.humanoidArmor(ModArmorMaterials.AZURITE_ARMOR_MATERIAL, ArmorType.BOOTS))
+    );
+
+    public static final DeferredItem<Item> AZURITE_HORSE_ARMOUR = ITEMS.registerItem(
+            "azurite_horse_armour",
+            props -> new Item(props.horseArmor(ModArmorMaterials.AZURITE_ARMOR_MATERIAL))
     );
 
     public static final DeferredItem<Item> ONION = ITEMS.registerItem("onion",
@@ -153,9 +163,6 @@ public static final DeferredItem<Item> GARNET_TILLER = ITEMS.registerItem("garne
     );
 
 
-//public static final DeferredItem<Item> GARNET_IMPALER = ITEMS.registerItem("garnet_impaler",
-           // properties -> new Item(properties.spear(ModToolTiers.PINK_GARNET,1f,-2.2f,0.5f,
-                //    3.1f,14f,8.7f,5.7f,14f,14f)));
 
 
 public static final DeferredItem<Item> STARLIGHT_ASHES = ITEMS.registerItem("starlight_ashes",

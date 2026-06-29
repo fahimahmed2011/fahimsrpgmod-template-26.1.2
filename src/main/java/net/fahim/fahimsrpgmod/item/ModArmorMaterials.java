@@ -1,4 +1,4 @@
-package net.fahim.fahimsrpgmod.item.custom;
+package net.fahim.fahimsrpgmod.item;
 
 import com.google.common.collect.Maps;
 import net.fahim.fahimsrpgmod.FahimsRPGMod;

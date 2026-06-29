@@ -48,6 +48,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.PINK_GARNET_HELMET);
                         output.accept(ModItems.PINK_GARNET_CHESTPLATE);
                         output.accept(ModItems.PINK_GARNET_LEGGINGS);
+                        output.accept(ModItems.PINK_GARNET_HORSE_ARMOUR);
 
                         output.accept(ModItems.GARNETS_WRATH);
                         output.accept(ModItems.GARNET_CLEAVER);
@@ -71,6 +72,7 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.AZURITE_CHESTPLATE);
                 output.accept(ModItems.AZURITE_LEGGINGS);
                 output.accept(ModItems.AZURITE_BOOTS);
+                output.accept(ModItems.AZURITE_HORSE_ARMOUR);
 
                 output.accept(ModItems.AZURITE_SWORD);
                 output.accept(ModItems.AZURITE_AXE);
@@ -108,10 +110,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.AZURITE_NETHER_ORE);
                         output.accept(ModBlocks.AZURITE_SLAB);
                         output.accept(ModBlocks.AZURITE_STAIRS);
-
-
-
-
 
 
                     }).build());

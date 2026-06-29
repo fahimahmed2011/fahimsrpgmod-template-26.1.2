@@ -27,6 +27,8 @@ public class ModModelprovider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.CHISEL_ITEM.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.END_FIRE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.STARLIGHT_ASHES.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.AZURITE_HORSE_ARMOUR.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.PINK_GARNET_HORSE_ARMOUR.get(), ModelTemplates.FLAT_ITEM);
         //Food
         itemModels.generateFlatItem(ModItems.ONION.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CAULIFLOWER.get(), ModelTemplates.FLAT_ITEM);

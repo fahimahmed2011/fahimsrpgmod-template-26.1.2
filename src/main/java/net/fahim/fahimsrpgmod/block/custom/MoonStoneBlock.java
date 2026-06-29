@@ -11,6 +11,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -21,12 +22,12 @@ public class MoonStoneBlock extends Block {
     }
 
     private static boolean isNight(ServerLevel level) {
-        long time = level.getDayTime() % 24000L;
+        long time = level.getLevelData().getGameTime() % 24000L;
         return time >= 13000L && time <= 23000L;
     }
 
     @Override
-    public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
+    public void stepOn(Level level, BlockPos pos, BlockState state, @Nullable Entity entity) {
         if (!level.isClientSide()) {
             ServerLevel serverLevel = (ServerLevel) level;
             if (isNight(serverLevel)) {

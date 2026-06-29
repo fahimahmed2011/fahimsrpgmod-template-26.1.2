@@ -30,6 +30,8 @@ public class FahimsRPGModDataGen {
     generator.addProvider(true,new ModDataMapProvider(packOutput,lookupProvider));
     generator.addProvider(true,new ModItemTagsProvider(packOutput,lookupProvider));
 
+    generator.addProvider(true, new ModEquipmentAssetProvider(packOutput));
+
 
     }
 }
